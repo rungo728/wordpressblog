@@ -9,3 +9,10 @@ body {
   color: #333;
   font-family: "メイリオ", Meiryo;
 }
+img {
+  width: 100%;
+  height: auto;
+}
+ul {
+  list-style: none;
+}
