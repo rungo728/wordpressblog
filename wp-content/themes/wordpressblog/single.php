@@ -74,7 +74,7 @@
               <p><a href="">WEbデザイン</a></p>
               <!-- サムネイル -->
               <div class="pb-3">
-                <img src="images/webdesign.png" alt="" class="img-fluid" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/webdesign.png" alt="" class="img-fluid" />
               </div>
               <!-- 本文 -->
               <div class="test-left px-2">
@@ -87,7 +87,7 @@
             <!-- プロフィール -->
             <div class="container bg-white mb-5 py-5">
               <div class="mx-5">
-                <img src="images/profile1.png" alt="" class="img-fluid rounded-circle">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/profile1.png" alt="" class="img-fluid rounded-circle">
               </div>
               <div class="text-center">
                 <h4 class="d-inline-block py-3 border-bottom border-info">コヤマカオル</h4>
@@ -110,7 +110,7 @@
               <div class="pb-5">
                 <!-- サムネイル -->
                 <div class="pb-3">
-                  <img src="images/meeting.png" alt="" class="img-fluid" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/meeting.png" alt="" class="img-fluid" />
                 </div>
                 <!-- 記事タイトル -->
                 <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
@@ -118,7 +118,7 @@
               <div class="pb-5">
                 <!-- サムネイル -->
                 <div class="pb-3">
-                  <img src="images/teacher1.png" alt="" class="img-fluid" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/teacher1.png" alt="" class="img-fluid" />
                 </div>
                 <!-- 記事タイトル -->
                 <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
@@ -126,7 +126,7 @@
               <div class="pb-5">
                 <!-- サムネイル -->
                 <div class="pb-3">
-                  <img src="images/illustration.png" alt="" class="img-fluid" />
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/illustration.png" alt="" class="img-fluid" />
                 </div>
                 <!-- 記事タイトル -->
                 <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
