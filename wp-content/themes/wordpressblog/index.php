@@ -125,10 +125,79 @@
         <div class="row py-3">
           <!-- メインコンテンツ -->
           <div class="col-md-8 col-12">
-
+            <div class="bg-white py-3 text-center">
+              <!-- 日付 -->
+              <p>2020/06/08</p>
+              <!-- 記事タイトル -->
+              <h2 class="px-3 pb-3 font-weight-bolder">ピックアップコンテンツ1ピックアップコンテンツ1ピックアップコンテンツ1</h2>
+              <!-- カテゴリー -->
+              <p><a href="">WEbデザイン</a></p>
+              <!-- サムネイル -->
+              <div class="pb-3">
+                <img src="images/webdesign.png" alt="" class="img-fluid" />
+              </div>
+              <!-- ディスクリプション -->
+              <p class="text-secondary">サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+              <!-- READMOREボタン -->
+              <div class="text-center">
+                <a href="">
+                  <div class="d-inline-block border p-3 text-secondary">
+                    READ MORE
+                  </div> 
+                </a>
+              </div>
+            </div>
           </div>
+          <!-- サイドバー -->
           <div class="col-md-4 col-12">
-
+            <!-- プロフィール -->
+            <div class="container bg-white mb-5 py-5">
+              <div class="mx-5">
+                <img src="images/profile1.png" alt="" class="img-fluid rounded-circle">
+              </div>
+              <div class="text-center">
+                <h4 class="d-inline-block py-3 border-bottom border-info">コヤマカオル</h4>
+              </div>
+              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+            <!-- 検索フォーム -->
+            <div class="container bg-white mb-5 py-5">
+              <form>
+                <div class="form-group">
+                  <input type="etext" class="form-control" placeholder="検索できます">
+                </div>
+              </form>
+            </div>
+            <!-- 読んで欲しい記事 -->
+            <div class="container bg-white mb-5 py-5">
+              <div class="text-center pb-5">
+                  <h4 class="d-inline-block py-3 border-bottom border-info">読んで欲しい記事</h4>
+              </div>
+              <div class="pb-5">
+                <!-- サムネイル -->
+                <div class="pb-3">
+                  <img src="images/meeting.png" alt="" class="img-fluid" />
+                </div>
+                <!-- 記事タイトル -->
+                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
+              </div>
+              <div class="pb-5">
+                <!-- サムネイル -->
+                <div class="pb-3">
+                  <img src="images/teacher1.png" alt="" class="img-fluid" />
+                </div>
+                <!-- 記事タイトル -->
+                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
+              </div>
+              <div class="pb-5">
+                <!-- サムネイル -->
+                <div class="pb-3">
+                  <img src="images/illustration.png" alt="" class="img-fluid" />
+                </div>
+                <!-- 記事タイトル -->
+                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
