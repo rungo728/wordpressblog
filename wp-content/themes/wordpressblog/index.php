@@ -14,7 +14,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../wordpressblog/style.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css" />
     <title>KAblog</title>
   </head>
   <body>
@@ -124,16 +124,47 @@
         <div class="row py-3">
           <!-- メインコンテンツ -->
           <div class="col-md-8 col-12">
+            <!-- 記事があれば繰り返し処理で一覧表示する -->
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+              <div class="bg-white py-3 mb-5 text-center">
+                <!-- 日付 -->
+                <p><?php the_time(''); ?></p>
+                <!-- 記事タイトル -->
+                <h2 class="px-3 pb-3 font-weight-bolder"><?php the_title(); ?></h2>
+                <!-- カテゴリー -->
+                <p><a href=""><?php the_category(''); ?></a></p>
+                <!-- サムネイル -->
+                <div class="pb-3">
+                  <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail(); ?>
+                  <?php else : ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
+                  <?php endif; ?>
+                </div>
+                <!-- ディスクリプション -->
+                <p class="text-secondary"><?php the_excerpt(); ?></p>
+                <!-- READMOREボタン -->
+                <div class="text-center">
+                  <a href="">
+                    <div class="d-inline-block border p-3 text-secondary">
+                      READ MORE
+                    </div> 
+                  </a>
+                </div>
+              </div>
+            <?php endwhile; else : ?>
+              <p>記事がありません。</p>
+            <?php endif; ?>
             <div class="bg-white py-3 text-center">
               <!-- 日付 -->
               <p>2020/06/08</p>
               <!-- 記事タイトル -->
               <h2 class="px-3 pb-3 font-weight-bolder">ピックアップコンテンツ1ピックアップコンテンツ1ピックアップコンテンツ1</h2>
               <!-- カテゴリー -->
-              <p><a href="">WEbデザイン</a></p>
+              <p><a href="">Webコーディング</a></p>
               <!-- サムネイル -->
               <div class="pb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/webdesign.png" alt="" class="img-fluid" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/pc1.png" alt="" class="img-fluid" />
               </div>
               <!-- ディスクリプション -->
               <p class="text-secondary">サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
