@@ -136,7 +136,7 @@
                 <!-- サムネイル -->
                 <div class="pb-3">
                   <?php if ( has_post_thumbnail() ) : ?>
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
                   <?php else : ?>
                     <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
                   <?php endif; ?>
@@ -155,28 +155,6 @@
             <?php endwhile; else : ?>
               <p>記事がありません。</p>
             <?php endif; ?>
-            <div class="bg-white py-3 text-center">
-              <!-- 日付 -->
-              <p>2020/06/08</p>
-              <!-- 記事タイトル -->
-              <h2 class="px-3 pb-3 font-weight-bolder">ピックアップコンテンツ1ピックアップコンテンツ1ピックアップコンテンツ1</h2>
-              <!-- カテゴリー -->
-              <p><a href="">Webコーディング</a></p>
-              <!-- サムネイル -->
-              <div class="pb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/pc1.png" alt="" class="img-fluid" />
-              </div>
-              <!-- ディスクリプション -->
-              <p class="text-secondary">サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
-              <!-- READMOREボタン -->
-              <div class="text-center">
-                <a href="">
-                  <div class="d-inline-block border p-3 text-secondary">
-                    READ MORE
-                  </div> 
-                </a>
-              </div>
-            </div>
           </div>
           <!-- サイドバー -->
           <div class="col-md-4 col-12">
