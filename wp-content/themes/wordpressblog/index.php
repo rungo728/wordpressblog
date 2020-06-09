@@ -138,8 +138,10 @@
           </div>
           <!-- サイドバー -->
           <div class="col-md-4 col-12">
+          <!-- サイドバーのプロフィールと検索部分をウィジェットで表示させている -->
+          <?php dynamic_sidebar( 'sidebar_widget01' ); ?>
             <!-- プロフィール -->
-            <div class="container bg-white mb-5 py-5">
+            <!-- <div class="container bg-white mb-5 py-5">
               <div class="mx-5">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/profile1.png" alt="" class="img-fluid rounded-circle">
               </div>
@@ -147,15 +149,8 @@
                 <h4 class="d-inline-block py-3 border-bottom border-info">コヤマカオル</h4>
               </div>
               <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <!-- 検索フォーム -->
-            <div class="container bg-white mb-5 py-5">
-              <form>
-                <div class="form-group">
-                  <input type="etext" class="form-control" placeholder="検索できます">
-                </div>
-              </form>
-            </div>
+            </div> -->
+            <!-- 検索フォーム部分 -->
             <!-- 読んで欲しい記事 -->
             <div class="container bg-white mb-5 py-5">
               <div class="text-center pb-5">
