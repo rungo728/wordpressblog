@@ -1,181 +1,42 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../wordpressblog/style.css" />
-    <title>KAblog</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="h1 py-3">KAblog</div>
-      </div>
-    </header>
-    <!-- グローバルナビ -->
-    <!-- bg-darkはbootstrapで設定されているcssのcolorブラックを適用 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-      <div class="container">
-        <a class="navbar-brand text-white" href="#">ホーム</a>
-        <button
-          class="navbar-toggler bg-white"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">書きてについて</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">WEbデザイン</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">Webコーディング</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">どうが</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-white" href="#">お問合せ</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<?php get_header(); ?>
     <main class="bg-light">
       <div class="container">
+
         <div class="row py-3">
           <!-- メインコンテンツ -->
           <div class="col-md-8 col-12">
-            <div class="bg-white py-3 text-center">
-              <!-- 日付 -->
-              <p>2020/06/08</p>
-              <!-- 記事タイトル -->
-              <h1 class="h2 px-3 pb-3 font-weight-bolder">ピックアップコンテンツ1ピックアップコンテンツ1ピックアップコンテンツ1</h2>
-              <!-- カテゴリー -->
-              <p><a href="">WEbデザイン</a></p>
-              <!-- サムネイル -->
-              <div class="pb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/webdesign.png" alt="" class="img-fluid" />
+            <!-- 記事があれば繰り返し処理で一覧表示する -->
+            <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+              <div class="bg-white py-3 mb-5 text-center">
+                <!-- 日付 -->
+                <p><?php the_time('Y年n月j日'); ?></p>
+                <!-- 記事タイトル -->
+                <h1 class="h2 px-3 pb-3 font-weight-bolder"><?php the_title(); ?></h1>
+                <!-- カテゴリー -->
+                <p><a href=""><?php the_category(''); ?></a></p>
+                <!-- サムネイル -->
+                <div class="pb-3">
+                  <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
+                  <?php else : ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
+                  <?php endif; ?>
+                </div>
+                <!-- 本文 -->
+                <!-- 本文の情報を全て取得できる -->
+                <div class="test-left px-2"><?php the_content(); ?></div>
               </div>
-              <!-- 本文 -->
-              <div class="test-left px-2">
-                サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
-              </div>
-            </div>
+            <?php endwhile; else : ?>
+              <p>記事がありません。</p>
+            <?php endif; ?>
           </div>
-          <!-- サイドバー -->
-          <div class="col-md-4 col-12">
-            <!-- プロフィール -->
-            <div class="container bg-white mb-5 py-5">
-              <div class="mx-5">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/profile1.png" alt="" class="img-fluid rounded-circle">
-              </div>
-              <div class="text-center">
-                <h4 class="d-inline-block py-3 border-bottom border-info">コヤマカオル</h4>
-              </div>
-              <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <!-- 検索フォーム -->
-            <div class="container bg-white mb-5 py-5">
-              <form>
-                <div class="form-group">
-                  <input type="etext" class="form-control" placeholder="検索できます">
-                </div>
-              </form>
-            </div>
-            <!-- 読んで欲しい記事 -->
-            <div class="container bg-white mb-5 py-5">
-              <div class="text-center pb-5">
-                  <h4 class="d-inline-block py-3 border-bottom border-info">読んで欲しい記事</h4>
-              </div>
-              <div class="pb-5">
-                <!-- サムネイル -->
-                <div class="pb-3">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/meeting.png" alt="" class="img-fluid" />
-                </div>
-                <!-- 記事タイトル -->
-                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
-              </div>
-              <div class="pb-5">
-                <!-- サムネイル -->
-                <div class="pb-3">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/teacher1.png" alt="" class="img-fluid" />
-                </div>
-                <!-- 記事タイトル -->
-                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
-              </div>
-              <div class="pb-5">
-                <!-- サムネイル -->
-                <div class="pb-3">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/illustration.png" alt="" class="img-fluid" />
-                </div>
-                <!-- 記事タイトル -->
-                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
-              </div>
-            </div>
-          </div>
+          <!-- サイドバー部分 -->
+          <?php get_sidebar(); ?>
         </div>
       </div>
-      <footer class="bg-white">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-12">
-              <div class="py-3">
-                <h4 class="d-inline-block py-3 border-bottom border-info">ABout</h4>
-              </div>
-              <p>
-                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-              </p>
-            </div>
-            <div class="col-md-4 col-12">
-              <div class="py-3">
-                <h4 class="d-inline-block py-3 border-bottom border-info">PORTfolio</h4>
-              </div>
-              <div class="p-3 border-top border-bottom border-secondary">
-                <a href="" class="text-secondary">
-                  RYOUTOKU
-                </a>
-              </div>
-              <div class="p-3 border-bottom border-secondary">
-                <a href="" class="text-secondary">
-                  KAblog 
-                </a>
-              </div>
-            </div>
-            <div class="col-md-4 col-12">
-              <div class="py-3">
-                <h4 class="d-inline-block py-3 border-bottom border-info">Twitter</h4>
-              </div>
-              <a class="twitter-timeline" data-lang="ja" data-height="600" href="https://twitter.com/kao11designer?ref_src=twsrc%5Etfw">Tweets by kao11designer</a> 
-              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-          </div>
-        </div>
-        <div class="bg-dark text-white text-center p-3">
-          <p>Copyright - Kaoru Koyama, 2020 All Rights Reserved</p>
-        </div>
-      </footer>
+      <!-- フッター部分 -->
+      <?php get_footer(); ?>
     </main>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
