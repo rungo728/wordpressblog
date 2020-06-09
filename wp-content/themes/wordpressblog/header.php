@@ -20,7 +20,14 @@
   <body>
     <header>
       <div class="container">
-        <h1 class="h1 py-3">KAblog</h1>
+        <!-- 投稿ページであれば記事のタイトルになっている -->
+        <?php
+        if ( is_home() ) {?>
+          <h1 class="h1 py-3">KAblog</h1>
+        <?php
+        } else {?>
+          <div class="h1 py-3">KAblog</div>
+        <?php }?>
       </div>
     </header>
     <!-- グローバルナビ -->
