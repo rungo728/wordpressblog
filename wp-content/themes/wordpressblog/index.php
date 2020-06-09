@@ -65,62 +65,41 @@
         <!-- ピックアップ記事 -->
         <!-- py-3はpaddingをつけるという意味？ -->
         <div class="row py-3">
-          <!-- mdが４、それ以降は12？ -->
-          <div class="col-md-4 col-12">
-            <div class="bg-white py-3">
-              <!-- サムネイル -->
-              <div class="pb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/eyecatch.png" alt="" class="img-fluid" />
-              </div>
-              <!-- 記事タイトル -->
-              <h2 class="h4 px-3 pb-3">ピックアップコンテンツ1ピックアップコンテンツ1ピックアップコンテンツ1</h2>
-              <!-- READMOREボタン -->
-              <div class="text-center">
-                <a href="">
-                  <div class="d-inline-block border p-3 text-secondary">
-                    READ MORE
-                  </div> 
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-12">
-            <div class="bg-white py-3">
-              <!-- サムネイル -->
-              <div class="pb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>//images/choco.png" alt="" class="img-fluid" />
-              </div>
-              <!-- 記事タイトル -->
-              <h2 class="h4 px-3 pb-3">ピックアップコンテンツ1ピックアップコンテンツ1ピックアップコンテンツ1</h2>
-              <!-- READMOREボタン -->
-              <div class="text-center">
-                <a href="">
-                  <div class="d-inline-block border p-3 text-secondary">
-                    READ MORE
-                  </div> 
-                </a>
+        <?php
+          // タブにtoppickupとついたものをピックアップ記事に表示させる
+          $top_query = new WP_Query( 'tag=toppickup' );
+        ?>
+        <!-- top-queryをhave_postsから探してくる -->
+        <!-- postsにあればピックアップに表示させます -->
+        <?php if ( $top_query->have_posts() ) : ?>
+          <?php while ( $top_query->have_posts() ) : $top_query->the_post(); ?>
+            <div class="col-md-4 col-12">
+              <div class="bg-white py-3">
+                <!-- サムネイル -->
+                <div class="pb-3">
+                  <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
+                  <?php else : ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
+                  <?php endif; ?>
+                </div>
+                <!-- 記事タイトル -->
+                <h2 class="h4 px-3 pb-3"><?php the_title(); ?></h2>
+                <!-- READMOREボタン -->
+                <div class="text-center">
+                  <!-- 繰り返し処理の中で記事のURLを取得する -->
+                  <a href="<?php the_permalink(); ?>">
+                    <div class="d-inline-block border p-3 text-secondary">
+                      READ MORE
+                    </div> 
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 col-12">
-            <div class="bg-white py-3">
-              <!-- サムネイル -->
-              <div class="pb-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/book1.jpg" alt="" class="img-fluid" />
-              </div>
-              <!-- 記事タイトル -->
-              <h2 class="h4 px-3 pb-3">ピックアップコンテンツ1ピックアップコンテンツ1ピックアップコンテンツ1</h2>
-              <!-- READMOREボタン -->
-              <div class="text-center">
-                <a href="">
-                  <div class="d-inline-block border p-3 text-secondary">
-                    READ MORE
-                  </div> 
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+          <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <!-- 何も表示するものがなければ -->
+        <?php endif; ?>
         <div class="row py-3">
           <!-- メインコンテンツ -->
           <div class="col-md-8 col-12">
@@ -128,7 +107,7 @@
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
               <div class="bg-white py-3 mb-5 text-center">
                 <!-- 日付 -->
-                <p><?php the_time(''); ?></p>
+                <p><?php the_time('Y年n月j日'); ?></p>
                 <!-- 記事タイトル -->
                 <h2 class="px-3 pb-3 font-weight-bolder"><?php the_title(); ?></h2>
                 <!-- カテゴリー -->
@@ -145,7 +124,8 @@
                 <p class="text-secondary"><?php the_excerpt(); ?></p>
                 <!-- READMOREボタン -->
                 <div class="text-center">
-                  <a href="">
+                  <!-- 繰り返し処理の中で記事のURLを取得 -->
+                  <a href="<?php the_permalink(); ?>">
                     <div class="d-inline-block border p-3 text-secondary">
                       READ MORE
                     </div> 
@@ -181,30 +161,30 @@
               <div class="text-center pb-5">
                   <h4 class="d-inline-block py-3 border-bottom border-info">読んで欲しい記事</h4>
               </div>
-              <div class="pb-5">
-                <!-- サムネイル -->
-                <div class="pb-3">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/meeting.png" alt="" class="img-fluid" />
-                </div>
-                <!-- 記事タイトル -->
-                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
-              </div>
-              <div class="pb-5">
-                <!-- サムネイル -->
-                <div class="pb-3">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/teacher1.png" alt="" class="img-fluid" />
-                </div>
-                <!-- 記事タイトル -->
-                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
-              </div>
-              <div class="pb-5">
-                <!-- サムネイル -->
-                <div class="pb-3">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/illustration.png" alt="" class="img-fluid" />
-                </div>
-                <!-- 記事タイトル -->
-                <h5 class="h5">読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１読んで欲しい記事１</h5>
-              </div>
+              <?php
+                // タブにsidepickupとついたものをピックアップ記事に表示させる
+                $side_query = new WP_Query( 'tag=sidepickup' );
+              ?>
+              <!-- top-queryをhave_postsから探してくる -->
+              <!-- postsにあればピックアップに表示させます -->
+              <?php if ( $side_query->have_posts() ) : ?>
+                <?php while ( $side_query->have_posts() ) : $side_query->the_post(); ?>
+                  <div class="pb-5">
+                    <!-- サムネイル -->
+                    <div class="pb-3">
+                      <?php if ( has_post_thumbnail() ) : ?>
+                        <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
+                      <?php else : ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
+                      <?php endif; ?>
+                    </div>
+                    <!-- 記事タイトル -->
+                    <h5 class="h5"><a class="text-secondary" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h5>
+                  </div>
+                <?php endwhile; ?>
+                  <?php wp_reset_postdata(); ?>
+              <!-- 何も表示するものがなければ -->
+              <?php endif; ?>
             </div>
           </div>
         </div>
