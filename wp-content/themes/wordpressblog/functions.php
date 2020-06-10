@@ -2,6 +2,8 @@
   // サムネイルに画像を乗せることができるように設定
   add_theme_support('post-thumbnails');
 
+  // titleタグの設定
+  add_theme_support('title-tag');  
   // ウィジェットの登録
   function my_widgets_init() {
 
@@ -30,5 +32,34 @@
     // ) );
   }
   add_action( 'widgets_init', 'my_widgets_init' );
+
+  // スクリプトとスタイルを正しくエンキューする方法
+  function theme_name_scripts() {
+    // wordpressテーマに必要なテーマ名などが書いてあるstyle.cssのこと
+    wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+    wp_enqueue_style( 'bootstrap-css', 
+    'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
+   );
+    wp_enqueue_script( 
+      'jquery',
+      'https://code.jquery.com/jquery-3.5.1.slim.min.js', 
+      array(),
+      true 
+    );
+    wp_enqueue_script( 
+      'jsdelivr',
+      'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', 
+      array(),
+      true 
+    );
+    wp_enqueue_script( 
+      'bootstrap-js',
+      'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js', 
+      array(),
+      true 
+    );
+  }
+
+  add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
 ?>
