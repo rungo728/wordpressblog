@@ -14,12 +14,12 @@
           <h4 class="d-inline-block py-3 border-bottom border-info">PORTfolio</h4>
         </div>
         <div class="p-3 border-top border-bottom border-secondary">
-          <a href="" class="text-secondary">
+          <a href="http://13.230.196.160:3000/" class="text-secondary">
             RYOUTOKU
           </a>
         </div>
         <div class="p-3 border-bottom border-secondary">
-          <a href="" class="text-secondary">
+          <a href="http://52.196.239.239:3000/" class="text-secondary">
             KAblog 
           </a>
         </div>
@@ -34,6 +34,6 @@
     </div>
   </div>
   <div class="bg-dark text-white text-center p-3">
-    <p>Copyright - Kaoru Koyama, 2020 All Rights Reserved</p>
+    <p>Copyright - Kaoru Koyama, <?php echo date("Y")?> All Rights Reserved</p>
   </div>
 </footer>
