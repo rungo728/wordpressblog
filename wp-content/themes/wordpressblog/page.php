@@ -1,7 +1,6 @@
 <?php get_header(); ?>
     <main class="bg-light">
       <div class="container">
-
         <div class="row py-3">
           <!-- メインコンテンツ -->
           <div class="col-md-10 col-12 mx-auto">
