@@ -75,8 +75,12 @@
               <p>記事がありません。</p>
             <?php endif; ?>
             <!-- ページネーション -->
-            <?php previous_posts_link(); ?>
-            <?php next_posts_link(); ?>
+            <div class="float-left pb-3">
+              <?php previous_posts_link('<div class="d-inline-block border p-3 text-secondary">前のページ</div>'); ?>
+            </div>
+            <div class="float-right pb-3">
+              <?php next_posts_link('<div class="d-inline-block border p-3 text-secondary">次のページ</div>'); ?>
+            </div>
           </div>
           <!-- サイドバー部分 -->
           <?php get_sidebar(); ?>
