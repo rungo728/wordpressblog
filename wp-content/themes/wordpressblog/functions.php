@@ -62,4 +62,13 @@
 
   add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
+  // ボタンショートコード($attsは属性 $contentはショートコードで囲まれた中のことを指す)
+  function KAblog_shortcode( $atts, $content = "" ) {
+    // linkという引数を持った属性を追加
+    // '.$atts['link']'" class="btn '.$atts['class']'">'までがaタグの中身
+    return '<a href= " '.$atts['link']. ' " class="btn '. $atts['class'].' " > '.$content . '</a>';
+    
+  }
+  add_shortcode( 'btn', 'KAblog_shortcode' );
+
 ?>
