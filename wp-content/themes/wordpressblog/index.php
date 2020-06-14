@@ -81,6 +81,9 @@
             <div class="float-right pb-3">
               <?php next_posts_link('<div class="d-inline-block border p-3 text-secondary">次のページ</div>'); ?>
             </div>
+            <?php if(function_exists("KAblog_pagenation")): ?>
+              <?php KAblog_pagenation(); ?>
+            <?php endif; ?>
           </div>
           <!-- サイドバー部分 -->
           <?php get_sidebar(); ?>

@@ -71,4 +71,21 @@
   }
   add_shortcode( 'btn', 'KAblog_shortcode' );
 
+  // ページネーション
+  function KAblog_pagenation(){
+    // いろんな情報が取得できるwp_queryを使用する
+    global $wp_query;
+    if ($wp_query->max_num_pages <=1)
+      return;
+    echo '<nav class="pagenation">';
+    echo paginate_links( array(
+      // 全体のページ数を表示させる
+      'total' => $wp_query->max_num_pages,
+      'prev_text'          => __('<'),
+      'next_text'          => __('>'),
+      'type'               => 'list'
+    ));
+    echo '</nav>';
+  }
+
 ?>
