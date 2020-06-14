@@ -74,6 +74,9 @@
             <?php endwhile; else : ?>
               <p>記事がありません。</p>
             <?php endif; ?>
+            <!-- ページネーション -->
+            <?php previous_posts_link(); ?>
+            <?php next_posts_link(); ?>
           </div>
           <!-- サイドバー部分 -->
           <?php get_sidebar(); ?>
