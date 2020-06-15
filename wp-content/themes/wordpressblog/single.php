@@ -43,6 +43,7 @@
                     </a>
                   </p>
                 </div>
+                <?php get_template_part('related'); ?>
               </div>
             <?php endwhile; else : ?>
               <p>記事がありません。</p>
