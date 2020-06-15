@@ -23,7 +23,12 @@
                 </div>
                 <!-- 本文 -->
                 <!-- 本文の情報を全て取得できる -->
-                <div class="test-left px-2"><?php the_content(); ?></div>
+                <div class="test-left px-2">
+                  <?php the_content(); ?>
+                  <!-- SNSシェアボタン -->
+                  <!-- parts-snsを呼び出す -->
+                  <?php get_template_part('parts-sns'); ?>
+                </div>
               </div>
             <?php endwhile; else : ?>
               <p>記事がありません。</p>
