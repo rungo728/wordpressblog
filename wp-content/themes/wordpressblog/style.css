@@ -4,7 +4,8 @@ Author: KaoruKoyama
 Version：1.0
 Desctiption: WordPressのデザインやコーディングを実践するところ
 */
-/* ページネーション */
+
+/* ページネーション  */
 .pagenation {
   /* floatがかかっていたので解除する */
   clear: both;
