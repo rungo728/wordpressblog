@@ -39,7 +39,7 @@
     wp_enqueue_style( 'style-name', get_stylesheet_uri() );
     wp_enqueue_style( 'bootstrap-css', 
     'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css'
-   );
+    );
     wp_enqueue_script( 
       'jquery',
       'https://code.jquery.com/jquery-3.5.1.slim.min.js', 
@@ -87,5 +87,13 @@
     ));
     echo '</nav>';
   }
+  // 投稿者ページカスタマイズ
+  function KAblog_profile_fields($user_contact){
+    // 項目の追加その名前をTwitterとする
+    $user_contact['twitter'] = 'Twitter';
+    // $user_contactの値を返す
+    return $user_contact;
+  }
+  add_filter('user_contactmethods','KAblog_profile_fields')
 
 ?>
