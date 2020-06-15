@@ -44,6 +44,7 @@
                   </p>
                 </div>
                 <?php get_template_part('related'); ?>
+                <?php get_template_part('breadcrumb'); ?>
               </div>
             <?php endwhile; else : ?>
               <p>記事がありません。</p>
