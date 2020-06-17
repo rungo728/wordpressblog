@@ -94,6 +94,33 @@
     // $user_contactの値を返す
     return $user_contact;
   }
-  add_filter('user_contactmethods','KAblog_profile_fields')
+  add_filter('user_contactmethods','KAblog_profile_fields');
+
+  // カスタム投稿タイプ
+  function codex_custom_init() {
+    $args = array(
+      // 投稿できるようにする見えるようにする
+      'public' => true,
+      // 投稿タイプの名前
+      'label'  => 'Books',
+      'menu_position' => 5,
+      'menu_icon' => 'dashicons-book',
+      'has_archive' => true
+     );
+    register_post_type( 'book', $args );
+
+    // Booksにカテゴリーをつけるための処理を記述（カスタムタクソノミー）
+    $args = array(
+      // パラメーターを指定してあげてregister_taxonomyで開く
+      // 本のカテゴリー(ジャンル）を管理画面に表示させる
+      'label' => __( '本のカテゴリー' ),
+      'rewrite' => array( 'slug' => 'genre' ),
+      // カテゴリーのような階層化する場合に記述
+      'hierarchical' => true,
+    register_taxonomy('genre','book',$args );
+
+  }
+  add_action( 'init', 'codex_custom_init' );
+
 
 ?>

@@ -20,6 +20,22 @@
                 <h1 class="h2 px-3 pb-3 font-weight-bolder"><?php the_title(); ?></h1>
                 <!-- カテゴリー -->
                 <p><a href=""><?php the_category(''); ?></a></p>
+                <!-- カスタムタクソノミー -->
+                <p>
+                  <?php
+                  // idとジャンルを取得して$termsに代入
+                  $terms = get_the_terms($post->ID, 'genre' );
+                  if($terms):?>
+                    <?php foreach($terms as $term): ?>
+                      <p>
+                        <!-- $termsからslugとnameを取得する -->
+                        <a href="<?php echo $term->slug; ?>">
+                          <?php echo $term->name;?>
+                        </a>
+                      </p>
+                    <?php endforeach; ?>
+                  <?php endif; ?>
+                </p>
                 <!-- サムネイル -->
                 <div class="pb-3">
                   <?php if ( has_post_thumbnail() ) : ?>
