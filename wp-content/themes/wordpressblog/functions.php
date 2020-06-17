@@ -116,7 +116,8 @@
       'label' => __( '本のカテゴリー' ),
       'rewrite' => array( 'slug' => 'genre' ),
       // カテゴリーのような階層化する場合に記述
-      'hierarchical' => true,
+      'hierarchical' => true
+    );
     register_taxonomy('genre','book',$args );
 
   }
