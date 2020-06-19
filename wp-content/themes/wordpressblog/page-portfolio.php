@@ -93,13 +93,13 @@
     </div>
 
     <div class="container bg-white py-5 my-5">
-      <!--Bootstrapの特徴-->
+      <!--WEBdesignポートフォリオ-->
       <div id="column">
-        <h2 class="text-center py-3">WEBdesignの特徴</h2>
+        <h2 class="text-center py-3">WEBdesignポートフォリオ</h2>
       </div>
       <div class="row">
         <div class="col-md-4 col-12">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img4.jpg" alt="">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/portfolio1.png" alt="">
         </div>
         <div class="col-md-4 col-12">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img5.jpg" alt="">
@@ -324,7 +324,8 @@
       
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います            </div>
+              準備中  <!-- HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います             -->
+            </div>
           </div>
         </div>
         <div class="card">
@@ -337,7 +338,8 @@
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-              半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。            </div>
+              準備中  <!-- 半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。             -->
+            </div>
           </div>
         </div>
         <div class="card">
@@ -350,7 +352,8 @@
           </div>
           <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
             <div class="card-body">
-              サーバー代、ドメイン代が必要になります。 おすすめのサーバーはエックスサーバー 、ドメインはお名前ドメインがおすすめです            </div>
+              サーバー代、ドメイン代が必要になります。 おすすめのサーバーはエックスサーバー 、ドメインはお名前.comがおすすめです            
+            </div>
           </div>
         </div>
       </div>
@@ -441,7 +444,7 @@
                 <img class="img-fluid rounded-circle profile" src="<?php echo get_template_directory_uri(); ?>/images/profile1.png" alt="">
               </div>
               <p>
-                料理・デザイン・プログラミングを愛しております,転職活動内容も発信,経歴：派遣事務→正社員事務9年→派遣経理（今ココ）→TECH56期卒業/働きながら転職活動しながらフリーでデザイン案件依頼を受けながら実績作りに励んでいます。
+                料理・デザイン・プログラミングを愛しております,転職活動内容も発信,経歴：派遣事務→正社員事務9年→派遣経理（今ココ）→TECH56期卒業/働きながら転職活動しながらフリーで案件依頼を受けながら実績作りに励んでいます。
               </p>
             </div>
             <div class="col-md-4 col-12">
@@ -454,7 +457,7 @@
                 </a>
               </div>
               <div class="p-3 border-bottom border-secondary">
-                <a href="http://52.196.239.239:3000/" class="text-secondary">
+                <a href="https://blogkao.net/wordpressblog/" class="text-secondary">
                   KAblog 
                 </a>
               </div>
