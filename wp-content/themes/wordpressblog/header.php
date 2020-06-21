@@ -31,7 +31,7 @@
     <!-- bg-darkはbootstrapで設定されているcssのcolorブラックを適用 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
       <div class="container">
-        <a class="navbar-brand text-white" href="#">ホーム</a>
+        <a class="navbar-brand text-white" href="<?php echo home_url(); ?>">ホーム</a>
         <button
           class="navbar-toggler bg-white"
           type="button"
@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="#">書きてについて</a>
+              <a class="nav-link text-white" href="#about">書きてについて</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link text-white" href="#">WEbデザイン</a>

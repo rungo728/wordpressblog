@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-12">
-        <div class="py-3">
+        <div id="about" class="py-3">
           <h4 class="d-inline-block py-3 border-bottom border-info">ABout</h4>
         </div>
         <p>

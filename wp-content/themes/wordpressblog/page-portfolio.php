@@ -26,28 +26,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link text-white" href="column">column</a>
+              <a class="nav-link text-white" href="<?php echo home_url(); ?>">ホーム</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#Flex">Flex</a>
+              <a class="nav-link text-white" href="#Flex">お客様のこえ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#tab">tab</a>
+              <a class="nav-link text-white" href="#tab">タブ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#Embeds">Embeds</a>
+              <a class="nav-link text-white" href="#Embeds">youTuBE</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#modal">modal</a>
+              <a class="nav-link text-white" href="#modal">モーダル</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#card">card</a>
+              <a class="nav-link text-white" href="#card">じっせき</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#accordion">accordion</a>
+              <a class="nav-link text-white" href="#accordion">アコーディオン</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">contactform</a>
+              <a class="nav-link text-white" href="#contactform">お問い合わせ</a>
             </li>
           </ul>
         </div>
@@ -76,8 +76,8 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/program3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block ">
+            <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/program1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white">
               <h5>Programing</h5>
             </div>
           </div>
@@ -365,7 +365,7 @@
       </div>
 
        <!--お問い合わせ-->
-       <div id="accordion">
+       <div id="contactform">
         <h2 class="text-center py-3">お問い合わせ</h2>
       </div>
       <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScp9cWDa_CqjPVc4TYU2YHskYXNYHDEF_tAN4IzdgxVcZEnJA/formResponse" class="needs-validation col-8 mx-auto" novalidate>
