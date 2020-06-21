@@ -119,12 +119,12 @@
           ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
         </div>
         <div class="col-md-6 col-12 p-0 align-self-center">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img7.jpg" alt="">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/cropkuchikomi711.jpg" alt="">
         </div>
       </div>
       <div class="d-flex flex-wrap justify-content-center">
         <div class="col-md-6 col-12 p-0 align-self-center">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img8.jpg" alt="">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/customer1.jpg" alt="">
         </div>
         <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
           ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
@@ -132,6 +132,7 @@
       </div>
 
       <!--BootStrapのタブ-->
+      <!-- WEBDEsignのタブ -->
       <div id="tab">
         <h2 class="text-center py-3">WEBDEsignのタブ</h2>
       </div>
@@ -141,26 +142,30 @@
             <a class="nav-link active text-center" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">グリッドシステム</a>
           </li>
           <li class="nav-item col-4 p-0">
-            <a class="nav-link text-center" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">OOCSS</a>
+            <a class="nav-link text-center" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">イラストレーターとフォトショップの違い</a>
           </li>
           <li class="nav-item col-4 p-0">
-            <a class="nav-link text-center" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">豊富なコンポーネント</a>
+            <a class="nav-link text-center" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">イラストレーターの使い道は？</a>
           </li>
         </ul>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="col-md-8 col-12 my-5 mx-auto">
-              Bootstrapでは横幅を１２個の列に分けたグリッドシステムを採用したデザインになっています。 １２は２,3,4,6で割り切れるのでレスポンシブデザインが簡単にできます。
+              <!-- Bootstrap -->
+              Webページのデザインでは横幅を１２個の列に分けたグリッドシステムを採用したデザインにするために、photoshopで作成する際にガイドとなる線を入れて作業をします。
+              １２は２,3,4,6で割り切れるのでレスポンシブデザインがやりやすくなります。
             </div>
           </div>
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="col-md-8 col-12 my-5 mx-auto">
-              BootStrapではOOCSS（Object-Oriented CSS）というオブジェクト指向CSSが採用されています。 構造と見た目を切り離した設計になります。
+              拡大した時に画像が粗くなるかどうか、フォトショップではその粗さを使って画像を加工します。
+              <!-- BootStrapではOOCSS（Object-Oriented CSS）というオブジェクト指向CSSが採用されています。 構造と見た目を切り離した設計になります。 -->
             </div>
           </div>
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="col-md-8 col-12 my-5 mx-auto">
-              このサイトでも使われているようにBootstrapでは様々なコンポーネントが用意されています。 公式サイトで調べながら使いながら慣れていきます。
+              名刺・ロゴ・チラシ・Webデザイン・youtubeのサムネイルなどに使うことが多いです。
+              <!-- このサイトでも使われているようにBootstrapでは様々なコンポーネントが用意されています。 公式サイトで調べながら使いながら慣れていきます。 -->
             </div>
           </div>
         </div>
