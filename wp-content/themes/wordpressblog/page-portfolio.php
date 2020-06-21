@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
     <title>KAOwebdesigner</title>
   </head>
   <body class="bg-light">
@@ -99,13 +100,13 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-12">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/portfolio1.png" alt="">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/Web1280–1.png" alt="">
+        </div>
+        <div class="col-md-4 col-12">
+          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/kaoec_top.png" alt="">
         </div>
         <div class="col-md-4 col-12">
           <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img5.jpg" alt="">
-        </div>
-        <div class="col-md-4 col-12">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img6.jpg" alt="">
         </div>
       </div>
 
@@ -149,7 +150,7 @@
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <div class="col-md-8 col-12 my-5 mx-auto">
-              Bootstrapでは横幅を１２個の列に分けたグリッドシステムを採用したデザインになっています。 １２は２,3,4,6で割り切れるのでレスポンシブデザインが用意になっています
+              Bootstrapでは横幅を１２個の列に分けたグリッドシステムを採用したデザインになっています。 １２は２,3,4,6で割り切れるのでレスポンシブデザインが簡単にできます。
             </div>
           </div>
           <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -159,7 +160,7 @@
           </div>
           <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
             <div class="col-md-8 col-12 my-5 mx-auto">
-              このサイトでも使われているようにBootstrapでは様々なコンポーネントが用意されています。 公式サイトで調べながら使いながら慣れていきましょう
+              このサイトでも使われているようにBootstrapでは様々なコンポーネントが用意されています。 公式サイトで調べながら使いながら慣れていきます。
             </div>
           </div>
         </div>
@@ -167,7 +168,7 @@
 
       <!--YouTube-->
       <div id="Embeds">
-        <h2 class="text-center py-3">youTuBE準備中</h2>
+        <h2 class="text-center py-3">youTuBE</h2>
       </div>
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/BciesYjmly0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -277,8 +278,8 @@
             <div class="card-body">
               <h5 class="card-title">Instagram</h5>
               <p class="card-text">
-                Instagramに編集した動画を使って分かりやすく解説をしました</p>
-              <a href="#" class="btn btn-primary">Instagramで準備中</a>
+                Instagramに編集した動画や画像を載せていきます。</p>
+              <a href="#" class="btn btn-primary">Instagram</a>
             </div>
           </div>
         </div>
@@ -288,9 +289,9 @@
             <div class="card-body">
               <h5 class="card-title">YouTube</h5>
               <p class="card-text">
-                日々のプログラミング・デザインの作業工程を中心に発信しています。
+                日々の料理・プログラミング・デザインの作業工程を中心に発信していきます。
               </p>
-              <a href="#" class="btn btn-primary">YouTubeで準備中</a>
+              <a href="#" class="btn btn-primary">YouTube</a>
             </div>
           </div>
         </div>
@@ -300,7 +301,7 @@
             <div class="card-body">
               <h5 class="card-title">Twitter</h5>
               <p class="card-text">
-              プログラミング・デザイン学習のアウトプットを中心に発信しています。自身の経験をベースに発信しています
+              プログラミング・デザイン学習のアウトプットを中心に発信しています。自身の経験をベースに発信しています。
                </p>
               <a href="https://twitter.com/kao11designer" class="btn btn-primary">Twitter</a>
             </div>
@@ -324,7 +325,7 @@
       
           <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
             <div class="card-body">
-              準備中  <!-- HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います             -->
+              HTML/CSS,BootStrapの基礎が必要です。しかし勉強中であれば大丈夫だと思います            
             </div>
           </div>
         </div>
@@ -338,7 +339,7 @@
           </div>
           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
             <div class="card-body">
-              準備中  <!-- 半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。             -->
+              半年から一年くらいしっかりと勉強をすれば稼げるようになると思います。 しかし、プログラミングで稼ぐためには技術力だけでなく営業力も必要になるので日々勉強が必要です。            
             </div>
           </div>
         </div>
@@ -362,7 +363,7 @@
        <div id="accordion">
         <h2 class="text-center py-3">お問い合わせ</h2>
       </div>
-      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeEpO9OM1zJJ1a58rzCDj0P9SxRAGPVUbnxTLWFwtpynki1vA/formResponse" class="needs-validation col-8 mx-auto" novalidate>
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScp9cWDa_CqjPVc4TYU2YHskYXNYHDEF_tAN4IzdgxVcZEnJA/formResponse" class="needs-validation col-8 mx-auto" novalidate>
         <div class="form-row">
           <div class="col-12 mb-3">
             <label for="validationCustom01">苗字</label>
@@ -408,7 +409,7 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-primary" type="submit">Submit form</button>
+        <button class="btn btn-default" type="submit">問い合わせする</button>
       </form>
       
       <script>
