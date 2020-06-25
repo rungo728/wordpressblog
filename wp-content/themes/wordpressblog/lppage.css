@@ -1,0 +1,7 @@
+div#maining {
+  background-image: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/child1.jpg);
+  padding-top: 835px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
