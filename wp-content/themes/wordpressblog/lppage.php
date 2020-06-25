@@ -13,12 +13,17 @@ Template Name: ランディングページ
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
               <div class="bg-white pb-5 mb-5 text-center">
                 <!-- サムネイル -->
-                <div class="pb-3">
+                <div class="pb-3" id="maining">
                   <?php if ( has_post_thumbnail() ) : ?>
                     <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
                   <?php else : ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
+                    <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" /> -->
                   <?php endif; ?>
+                  <p class="mvCatch">
+                    <span class="lineWavecmn01 font-weight-bolder">
+                      英語にたくさん
+                    </span>
+                  </p>
                 </div>
                 <!-- 記事タイトル -->
                 <h1 class="h2 px-3 pb-3 font-weight-bolder"><?php the_title(); ?></h1>
