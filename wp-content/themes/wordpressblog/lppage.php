@@ -19,10 +19,23 @@ Template Name: ランディングページ
                   <?php else : ?>
                     <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" /> -->
                   <?php endif; ?>
-                  <p class="mvCatch">
+                  <p class="mvCatch text-left">
                     <span class="lineWavecmn01 font-weight-bolder">
                       英語にたくさん
                     </span>
+                    <br>
+                    <span class="lineWavecmn01 font-weight-bolder">
+                      触れるための学習環境。
+                    </span>
+                    <br>
+                    <span class="lineWavecmn01 font-weight-bolder">
+                      楽しく学ぶための広場。
+                    </span>
+                  </p>
+                  <p class="col-6 mvAnthor">
+                    <a href="#point" class="fuwafuwa">
+                      <img src="<?php echo get_template_directory_uri(); ?>/images/kaonline.png" alt="">
+                    </a>
                   </p>
                 </div>
                 <!-- 記事タイトル -->
