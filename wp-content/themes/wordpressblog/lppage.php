@@ -41,7 +41,7 @@ Template Name: ランディングページ
                             <br class="viewSp">
                             お悩みではありませんか？
                           </h2>
-                          <div class="d-inline-flex troubleVoice">
+                          <div class="d-flex troubleVoice">
                             <div class="mr-4 troubleVoiceItem item01">
                               <p class="p-4 troubleVoiceTxt font-weight-bolder text-white bg-info">
                                 抵抗なく英語に
@@ -74,6 +74,9 @@ Template Name: ランディングページ
                             </div>
                           </div>
                         </div>
+                      </section>
+                      <section class="secAbout bg01">
+                        <div class="aboutIn innerCmn01 cf"></div>
                       </section>
                     </div>
                   </main>
