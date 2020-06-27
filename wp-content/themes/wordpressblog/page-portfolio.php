@@ -99,14 +99,29 @@
         <h2 class="text-center py-3">WEBdesignポートフォリオ</h2>
       </div>
       <div class="row">
-        <div class="col-md-4 col-12">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/Web1280–1.png" alt="">
+        <div class="col-md-4 col-12 portfolio_box">
+          <a href="#" class="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/Web1280–1.png" alt="">
+            <div class="mask">
+              <div class="portfolio_img_p">blogサイトデザイン<br>（XDで作成）</div>
+            </div>
+          </a>
         </div>
-        <div class="col-md-4 col-12">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/kaoec_top.png" alt="">
+        <div class="col-md-4 col-12 portfolio_box">
+          <a href="#" class="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/kaoec_top.png" alt="">
+            <div class="mask">
+              <div class="portfolio_img_p">ECサイトデザイン（Photoshopで作成）</div>
+            </div>
+          </a>
         </div>
-        <div class="col-md-4 col-12">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img5.jpg" alt="">
+        <div class="col-md-4 col-12 portfolio_box">
+         <a href="#" class="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/lppage1.png" alt="">
+            <div class="mask">
+              <div class="portfolio_img_p">ランディングページデザインとコーディング模写（Photoshopで作成）</div>
+            </div>
+          </a>
         </div>
       </div>
 

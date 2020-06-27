@@ -13,3 +13,29 @@ ul {
 .profile {
   width: 200px;
 }
+.portfolio_box {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio_box a .portfolio_img_p {
+  font-size: 130%;
+  text-align: center;
+  padding-top: 80px;
+  color: #fff;
+}
+.portfolio_box a .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  -webkit-transform: scale(0); /* 大きさを０にして表示しない */
+  transform: scale(0);
+}
+.portfolio_box:hover a .mask {
+  -webkit-transform: scale(1); /* 大きさを１にして表示する */
+  transform: scale(1);
+}
