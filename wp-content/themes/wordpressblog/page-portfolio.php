@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template-1.css" />
     <title>KAOwebdesigner</title>
   </head>
   <body class="bg-light">
@@ -119,12 +119,12 @@
           ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト
         </div>
         <div class="col-md-6 col-12 p-0 align-self-center">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/cropkuchikomi711.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/cropkuchikomi711.jpg" alt="">
         </div>
       </div>
       <div class="d-flex flex-wrap justify-content-center">
         <div class="col-md-6 col-12 p-0 align-self-center">
-          <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/customer1.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/customer1.jpg" alt="">
         </div>
         <div class="col-md-6 col-12 p-0 align-self-center h3 p-4">
           ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト

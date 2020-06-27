@@ -1,0 +1,35 @@
+/* SNSシェアボタン */
+.twitter {
+  background-color: #00acee;
+}
+.btn-default {
+  display: block;
+  margin: 8px 0 16px;
+  width: 100%;
+  line-height: 46px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  cursor: pointer;
+  text-align: center;
+  background-color: #d8d8d8;
+}
+.btn-default:hover {
+  background-color: #f6ac4d;
+}
+.img-fluid {
+  -moz-transition: -moz-transform 0.5s linear;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  -o-transition: -o-transform 0.5s linear;
+  -ms-transition: -ms-transform 0.5s linear;
+  transition: transform 0.5s linear;
+}
+.img-fluid:hover {
+  box-shadow: 0 0 20px #ddd;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
