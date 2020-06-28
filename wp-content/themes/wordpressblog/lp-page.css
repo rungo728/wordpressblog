@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 div#maining {
   position: relative;
   background-image: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/child1.jpg);
@@ -31,9 +34,10 @@ p.mvCatch {
   line-height: 1.75;
   font-size: 38px;
 }
-span.lineWavecmn01 {
+span.lineWaveCmn01 {
   text-decoration: underline wavy yellow;
   text-align: left;
+  letter-spacing: 3px;
 }
 p.mvAnthor {
   position: absolute;
@@ -90,6 +94,70 @@ a.fuwafuwa {
   100% {
     transform: translateY(0px);
   }
+}
+.balance {
+  width: 135px;
+  margin-right: 5px;
+}
+.bg01 {
+  background-size: cover;
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/wave1.png)
+    repeat 0 0;
+}
+.boxCmn01 {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+}
+.is_arw_bottom {
+  position: relative;
+}
+.is_arw_bottom:after {
+  position: absolute;
+  content: "";
+  top: 99.5%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 5.49333vw 8vw;
+  border-top-color: #fff;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.viewSp {
+  display: none;
+}
+p.h5.aboutTxt {
+  line-height: 1.4;
+}
+p.mb-5.aboutTxt {
+  text-align: center;
+  color: #fff;
+  line-height: 1.9;
+}
+.aboutItem.item02 {
+  background: #76cbe2;
+}
+.is_large {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.aboutPointItem {
+  float: left;
+  margin-right: 30px;
+  padding: 14px 10px 14px 13px;
+  border-radius: 6px;
+  background: #fff;
+}
+.aboutPointIco {
+  padding: 32px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #525252;
+  background-color: yellow;
+  border: dotted 3px #a7a7a7;
 }
 @media screen and (max-width: 768px) {
   p.mvCatch {
