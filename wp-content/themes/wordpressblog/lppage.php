@@ -13,15 +13,15 @@ Template Name: ランディングページ
                 <!-- サムネイル -->
                 <div class="pb-3" id="maining">
                   <p class="mvCatch text-left">
-                    <span class="lineWavecmn01 font-weight-bolder">
+                    <span class="lineWaveCmn01 font-weight-bolder">
                       英語にたくさん
                     </span>
                     <br>
-                    <span class="lineWavecmn01 font-weight-bolder">
+                    <span class="lineWaveCmn01 font-weight-bolder">
                       触れるための学習環境。
                     </span>
                     <br>
-                    <span class="lineWavecmn01 font-weight-bolder">
+                    <span class="lineWaveCmn01 font-weight-bolder">
                       楽しく学ぶための広場。
                     </span>
                   </p>
@@ -34,6 +34,7 @@ Template Name: ランディングページ
                 <div id="contents" class="mt-5">
                   <main role="main">
                     <div id="main">
+                      <!-- お悩みの声部分 -->
                       <section class="h6 secTrouble js-inview fadeIn">
                         <div class="troubleIn cf">
                           <h2 class="troubleTit font-weight-bolder">
@@ -75,8 +76,92 @@ Template Name: ランディングページ
                           </div>
                         </div>
                       </section>
+                      <!-- お悩み解決部分 -->
                       <section class="secAbout bg01">
-                        <div class="aboutIn innerCmn01 cf"></div>
+                        <div class="pt-5 aboutIn innerCmn01 cf">
+                          <div class="p-5 aboutItem item01 boxCmn01 is_arw_bottom cf js-inview fadeIn">
+                            <h2 class="h2 mb-5 aboutTit font-weight-bolder">
+                              <span class="lineWaveCmn01 only_pc">
+                                <span class="lineWaveCmn01 only_sp">使える英語力を身に</span>
+                                <br class="viewSp"><span class="lineWaveCmn01 only_sp">つけるには</span>
+                              </span>
+                            </h2>
+                            <p class="h5 aboutTxt font-weight-bolder">
+                              <span class="txt01">
+                                新しいことを吸収しやすい
+                                <br class="viewSp">
+                                <span class="text-info">
+                                  小学生から始めるのが
+                                  <br class="viewSp">
+                                  ベストです。
+                                </span>
+                              </span>
+                              <br>
+                              <span class="txt02">
+                                ただし、やみくもに
+                                <br class="viewSp">
+                                勉強するのではなく、
+                              </span>
+                              <br>
+                              <span class="txt03 text-info">
+                                <img class="balance img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img_about_almighty01.png" alt="">
+                                  バランスのいい
+                                  <br class="viewSp">
+                                  英語力を身につけることが
+                                  <br class="viewSp">
+                                  大切です。
+                              </span>
+                            </p>
+                          </div>
+                          <div class="mt-5 pt-5 aboutItem item02 boxCmn01 is_arw_top is_arw_bottom cf js-inview fadeIn">
+                            <div class="boxCmn01_bg">
+                              
+                            </div>
+                            <p class="mb-5 aboutTxt font-weight-bolder">
+                              <span class="txt01">偏った英語力では、将来役立つ
+                                <span class="text-warning">「使える
+                                  <br class="viewSp">英語力」
+                                </span>は身につきません。
+                                <br>小学生の頃からバランスのいい英語力を
+                                <br class="viewSp">育んでいくには、
+                              </span>
+                                <br>
+                              <span class="txt02">
+                                <span class="lineWaveCmn01">次の
+                                  <span class="is_large">2つ</span>が大切です。
+                                </span>
+                              </span>
+                            </p>
+                            <ul class="d-flex aboutPoint cf">
+                              <li class="col-5 aboutPointItem">
+                                <p class="aboutPointIco rounded-circle font-weight-bolder">
+                                  楽しく
+                                  <br>
+                                  学ぶ
+                                </p>
+                                <p class="aboutPointTxt font-weight-bolder">自ら学ぶ
+                                  <br class="viewSp">姿勢を
+                                  <br>身につける
+                                </p>
+                                <div class="aboutPointImg">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/images/img_about_point01.png" alt="">
+                                </div>
+                              </li>
+                              <li class="col-5 aboutPointItem">
+                                    <p class="aboutPointIco rounded-circle font-weight-bolder">無理なく
+                                      <br>続ける
+                                    </p>
+                                    <p class="aboutPointTxt font-weight-bolder">継続して学び、
+                                      <br>確実に
+                                      <br class="viewSp">身につける
+                                    </p>
+                                    <div class="aboutPointImg">
+                                      <img src="<?php echo get_template_directory_uri(); ?>/images/img_about_point02.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                          </div>
+                        </div>
                       </section>
                     </div>
                   </main>
