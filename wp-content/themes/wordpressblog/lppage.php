@@ -37,7 +37,7 @@ Template Name: ランディングページ
                       <!-- お悩みの声部分 -->
                       <section class="h6 secTrouble js-inview fadeIn">
                         <div class="troubleIn cf">
-                          <h2 class="troubleTit font-weight-bolder">
+                          <h2 class="troubleTit is_txt_bold">
                             こんなことで
                             <br class="viewSp">
                             お悩みではありませんか？
@@ -177,7 +177,7 @@ Template Name: ランディングページ
                                   <br>ご用意しています。
                                 </span>
                               </p>
-                              <div class="aboutImg">
+                              <div class="p-3 aboutImg">
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/pic_about_point01.png" alt="">
                               </div>
                             </div>
@@ -185,6 +185,34 @@ Template Name: ランディングページ
                         </div>
                       </section>
                       <!-- お問い合わせ部分 -->
+                      <div class="cv01 boxCmn01_frame js-inview fadeIn">
+                        <section class="boxCvCmn01 bg02 cf">
+                          <div class="cvEx is_contact">
+                            <div class="p-4 cvIn">
+                              <p class="pb-3 cvContactTit font-weight-bolder">お問い合わせ</p>
+                              <div class="pt-3 cvContactTel">
+                                <p class="telCmn01">
+                                  <i class="fas fa-phone-alt"></i>
+                                  <a href="#" class="is_font_roboto">
+                                    <span class="telNum">0120-
+                                      <span data-rubi="いざ">13
+                                      </span>-
+                                      <span data-rubi="みな合格">3759
+                                      </span>
+                                    </span>
+                                  </a>
+                                </p>
+                              </div>
+                              <p class="mt-3 col-6 cvAreaBtn btnCmn01 is_area">
+                                <a href="#apply">
+                                  <i class="fas fa-map-marker-alt"></i>
+                                  <span>お近くの校を探す</span>
+                                </a>
+                              </p>
+                            </div>
+                          </div>
+                        </section>
+                      </div>
                     </div>
                   </main>
                 </div>
@@ -211,6 +239,7 @@ Template Name: ランディングページ
     </main>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/4a2fabbad9.js" crossorigin="anonymous"></script>
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

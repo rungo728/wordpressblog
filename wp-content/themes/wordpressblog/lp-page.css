@@ -1,6 +1,12 @@
 * {
   box-sizing: border-box;
 }
+.is_txt_bold {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "ヒラギノ角ゴ ProN W6", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
+    sans-serif;
+  font-weight: 700;
+}
 div#maining {
   position: relative;
   background-image: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/child1.jpg);
@@ -48,6 +54,7 @@ a.fuwafuwa {
   display: block;
   animation: fuwafuwa 3s infinite;
 }
+/* お悩みの声部分 */
 .secTrouble .troubleVoice {
   position: relative;
 }
@@ -94,6 +101,10 @@ a.fuwafuwa {
   100% {
     transform: translateY(0px);
   }
+}
+/* お悩み解決部分 */
+.aboutIn {
+  padding: 15px;
 }
 .balance {
   width: 135px;
@@ -232,6 +243,73 @@ p.h4.aboutTxt {
 .my-5.py-5.aboutItem.item03:after {
   display: none;
 }
+/* お問い合わせ部分 */
+.boxCmn01_frame {
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/study1.png);
+  padding-top: 500px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.boxCvCmn01 {
+  color: #3e210d;
+  font-size: 25px;
+}
+.cvEx.is_contact {
+  background: #f7eeea;
+}
+.cvContactTit {
+  text-align: center;
+  border-bottom: solid 0.26667vw #e1d1cb;
+}
+.telCmn01 a {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #3e210d;
+}
+.is_font_roboto {
+  font-family: "Roboto", sans-serif;
+}
+.telNum span[data-rubi] {
+  position: relative;
+}
+.telNum span[data-rubi]:before {
+  position: absolute;
+  top: -18px;
+  left: -12px;
+  content: attr(data-rubi);
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  width: 150%;
+  letter-spacing: 10px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "ヒラギノ角ゴ ProN W6", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
+    sans-serif;
+  font-weight: 700;
+}
+.btnCmn01.is_area {
+  max-width: 320px;
+  margin: auto;
+}
+.btnCmn01.is_area a {
+  padding: 20px 0;
+  color: #3e210d;
+  border: solid 2px #3e210d;
+  background: #fff;
+  display: block;
+  text-decoration: none;
+  border-radius: 60px;
+  text-align: center;
+}
+.btnCmn01.is_area span {
+  font-size: 20px;
+}
 @media screen and (max-width: 768px) {
   p.mvCatch {
     left: 10px;
@@ -252,7 +330,7 @@ p.h4.aboutTxt {
     left: 0;
     width: 37%;
     height: 60px;
-    background: #76cbe2;
+    background: #fff;
     border-top-left-radius: 20px;
   }
   .boxCmn01_bg:after {
@@ -262,11 +340,14 @@ p.h4.aboutTxt {
     right: 0;
     width: 37%;
     height: 60px;
-    background: #76cbe2;
+    background: #fff;
     border-top-right-radius: 20px;
   }
 }
 @media screen and (max-width: 500px) {
+  .viewSp {
+    display: block;
+  }
   p.mvCatch {
     left: 10px;
     bottom: 50px;
@@ -276,7 +357,7 @@ p.h4.aboutTxt {
   }
   p.mvAnthor {
     position: absolute;
-    right: -33px;
+    right: -43px;
     bottom: -60px;
   }
   .troubleVoiceImg img {
