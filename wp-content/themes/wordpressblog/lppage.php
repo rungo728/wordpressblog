@@ -113,11 +113,11 @@ Template Name: ランディングページ
                               </span>
                             </p>
                           </div>
-                          <div class="mt-5 pt-5 aboutItem item02 boxCmn01 is_arw_top is_arw_bottom cf js-inview fadeIn">
+                          <div class="my-5 py-5 aboutItem item02 boxCmn01 is_arw_top is_arw_bottom cf js-inview fadeIn">
                             <div class="boxCmn01_bg">
                               
                             </div>
-                            <p class="mb-5 aboutTxt font-weight-bolder">
+                            <p class="h5 mb-5 aboutTxt font-weight-bolder">
                               <span class="txt01">偏った英語力では、将来役立つ
                                 <span class="text-warning">「使える
                                   <br class="viewSp">英語力」
@@ -148,21 +148,43 @@ Template Name: ランディングページ
                                 </div>
                               </li>
                               <li class="col-5 aboutPointItem">
-                                    <p class="aboutPointIco rounded-circle font-weight-bolder">無理なく
-                                      <br>続ける
-                                    </p>
-                                    <p class="aboutPointTxt font-weight-bolder">継続して学び、
-                                      <br>確実に
-                                      <br class="viewSp">身につける
-                                    </p>
-                                    <div class="aboutPointImg">
-                                      <img src="<?php echo get_template_directory_uri(); ?>/images/img_about_point02.png" alt="">
-                                    </div>
-                                </li>
+                                <p class="aboutPointIco rounded-circle font-weight-bolder">無理なく
+                                  <br>続ける
+                                </p>
+                                <p class="aboutPointTxt font-weight-bolder">継続して学び、
+                                  <br>確実に
+                                  <br class="viewSp">身につける
+                                </p>
+                                <div class="aboutPointImg">
+                                  <img src="<?php echo get_template_directory_uri(); ?>/images/img_about_point02.png" alt="">
+                                </div>
+                              </li>
                             </ul>
+                          </div>
+                          <div class="my-5 py-5 aboutItem item03 boxCmn01 is_arw_top js-inview fadeIn">
+                            <div class="aboutItemIn cf">
+                              <div class="boxCmn01_bg"></div>
+                              <p class="h4 aboutTxt font-weight-bolder">
+                                <span class="txt01">
+                                  能開の
+                                  <img class="balance img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/img_about_almighty01.png" alt="">では、
+                                </span>
+                                <br>
+                                <span class="txt02">バランスのとれた
+                                  <br class="viewPc">英語力を
+                                  <br class="viewSp">習得する為に
+                                  <br class="viewPc">最適なプログラムを
+                                  <br>ご用意しています。
+                                </span>
+                              </p>
+                              <div class="aboutImg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/pic_about_point01.png" alt="">
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </section>
+                      <!-- お問い合わせ部分 -->
                     </div>
                   </main>
                 </div>

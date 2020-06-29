@@ -41,7 +41,7 @@ span.lineWaveCmn01 {
 }
 p.mvAnthor {
   position: absolute;
-  right: 0;
+  right: -52px;
   bottom: -80px;
 }
 a.fuwafuwa {
@@ -101,8 +101,8 @@ a.fuwafuwa {
 }
 .bg01 {
   background-size: cover;
-  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/wave1.png)
-    repeat 0 0;
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/back2.jpg)
+    repeat 0;
 }
 .boxCmn01 {
   position: relative;
@@ -120,11 +120,78 @@ a.fuwafuwa {
   width: 0;
   height: 0;
   border: solid transparent;
-  border-width: 5.49333vw 8vw;
+  border-width: 28px 40px;
   border-top-color: #fff;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+.is_arw_top {
+  position: relative;
+}
+.is_arw_top:before {
+  position: absolute;
+  content: "";
+  top: -39px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: solid #fff;
+  border-width: 41px 66px 0;
+  border-top-color: transparent;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.is_arw_top:after {
+  position: absolute;
+  content: "";
+  top: 99.5%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 28px 40px;
+  border-top-color: #76cbe2;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.item02 .boxCmn01_bg:before,
+.item02 .boxCmn01_bg:after {
+  background: #76cbe2;
+}
+.boxCmn01_bg {
+  position: relative;
+}
+.boxCmn01_bg:before {
+  position: absolute;
+  content: "";
+  top: -87px;
+  left: 0;
+  width: 41%;
+  height: 60px;
+  background: #fff;
+  border-top-left-radius: 20px;
+}
+.boxCmn01_bg:after {
+  position: absolute;
+  content: "";
+  top: -87px;
+  right: 0;
+  width: 41%;
+  height: 60px;
+  background: #fff;
+  border-top-right-radius: 20px;
+}
+.cf {
+  position: relative;
+}
+.cf:after {
+  position: absolute;
+  content: "";
+  display: block;
+  clear: both;
 }
 .viewSp {
   display: none;
@@ -136,6 +203,9 @@ p.mb-5.aboutTxt {
   text-align: center;
   color: #fff;
   line-height: 1.9;
+}
+p.h4.aboutTxt {
+  line-height: 1.7;
 }
 .aboutItem.item02 {
   background: #76cbe2;
@@ -159,6 +229,9 @@ p.mb-5.aboutTxt {
   background-color: yellow;
   border: dotted 3px #a7a7a7;
 }
+.my-5.py-5.aboutItem.item03:after {
+  display: none;
+}
 @media screen and (max-width: 768px) {
   p.mvCatch {
     left: 10px;
@@ -172,6 +245,26 @@ p.mb-5.aboutTxt {
     right: 0;
     bottom: -80px;
   }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 37%;
+    height: 60px;
+    background: #76cbe2;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 37%;
+    height: 60px;
+    background: #76cbe2;
+    border-top-right-radius: 20px;
+  }
 }
 @media screen and (max-width: 500px) {
   p.mvCatch {
@@ -183,11 +276,45 @@ p.mb-5.aboutTxt {
   }
   p.mvAnthor {
     position: absolute;
-    right: 0;
+    right: -33px;
     bottom: -60px;
   }
   .troubleVoiceImg img {
     width: 125px;
     height: 200px;
+  }
+  .is_arw_top::before {
+    position: absolute;
+    content: "";
+    top: -39px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: solid #fff;
+    border-width: 30px 42px 15px;
+    border-top-color: transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 41%;
+    height: 60px;
+    background: #fff;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 41%;
+    height: 60px;
+    background: #fff;
+    border-top-right-radius: 20px;
   }
 }
