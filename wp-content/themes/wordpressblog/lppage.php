@@ -42,9 +42,9 @@ Template Name: ランディングページ
                             <br class="viewSp">
                             お悩みではありませんか？
                           </h2>
-                          <div class="d-flex troubleVoice">
-                            <div class="mr-4 troubleVoiceItem item01">
-                              <p class="p-4 troubleVoiceTxt font-weight-bolder text-white bg-info">
+                          <div class="troubleVoice">
+                            <div class="troubleVoiceItem item01">
+                              <p class="troubleVoiceTxt font-weight-bolder text-white bg-info">
                                 抵抗なく英語に
                                 <br>
                                 接してほしい...
@@ -53,8 +53,8 @@ Template Name: ランディングページ
                                 <img src="<?php echo get_template_directory_uri(); ?>/images/img_trouble01.png" alt="">
                               </div>
                             </div>
-                            <div class="mr-4 troubleVoiceItem item02">
-                              <p class="p-4 troubleVoiceTxt font-weight-bolder text-white bg-info">
+                            <div class="troubleVoiceItem item02">
+                              <p class="troubleVoiceTxt font-weight-bolder text-white bg-info">
                                 中学での英語学習で、
                                 <br>
                                 出遅れたくない…
@@ -64,7 +64,7 @@ Template Name: ランディングページ
                               </div>
                             </div>
                             <div class="troubleVoiceItem item03">
-                              <p class="p-4 troubleVoiceTxt font-weight-bolder text-white bg-info">
+                              <p class="troubleVoiceTxt font-weight-bolder text-white bg-info">
                                 英語を話せても、
                                 <br>
                                 書く力が足りない気がする…

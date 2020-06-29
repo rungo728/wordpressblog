@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 .is_txt_bold {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
     "ヒラギノ角ゴ ProN W6", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
@@ -57,6 +58,68 @@ a.fuwafuwa {
 /* お悩みの声部分 */
 .secTrouble .troubleVoice {
   position: relative;
+  height: 320px;
+}
+/* 女性１ */
+.troubleVoiceItem.item01 {
+  position: absolute;
+  bottom: 0;
+  left: 85px;
+}
+.secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+  width: 170px;
+  height: 95px;
+  margin-bottom: 7px;
+  padding-top: 26px;
+}
+.secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+  width: 115px;
+  margin-left: 55px;
+}
+/* 女性２ */
+.troubleVoiceItem.item02 {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+.secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+  width: 232px;
+  height: 120px;
+  margin-bottom: 40px;
+  padding-top: 50px;
+}
+.secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+  width: 95px;
+  margin: -2px 0 0 80px;
+}
+/* 女性３ */
+.troubleVoiceItem.item03 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+  width: 270px;
+  height: 135px;
+  padding: 35px 0 0 15px;
+  text-align: left;
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+  position: relative;
+  right: 40px;
+  width: 105px;
+  margin-left: 40px;
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceImg:before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -20px;
+  width: 20px;
+  height: 35px;
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/ase2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .secTrouble .troubleVoice:after {
   position: absolute;
@@ -70,25 +133,43 @@ a.fuwafuwa {
   background-size: cover;
   z-index: 3;
 }
-
+.troubleVoiceItem {
+  position: absolute;
+}
 .troubleVoiceTxt {
   position: relative;
   height: 130px;
   border-radius: 130px / 65px;
 }
-.troubleVoiceTxt:after {
+.secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt:after {
   position: absolute;
   content: "";
-  right: 13px;
-  bottom: 7px;
+  right: 96px;
+  bottom: -15px;
+  border-left: 31px solid #17a2b8;
+  border-top: 30px solid transparent;
+  border-bottom: 35px solid transparent;
+  transform: rotate(-410deg);
+}
+.secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt:after {
+  position: absolute;
+  content: "";
+  right: 150px;
+  bottom: -15px;
+  border-left: 31px solid #17a2b8;
+  border-top: 30px solid transparent;
+  border-bottom: 35px solid transparent;
+  transform: rotate(-410deg);
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt:after {
+  position: absolute;
+  content: "";
+  right: 150px;
+  bottom: -15px;
   border-left: 28px solid #17a2b8;
   border-top: 17px solid transparent;
   border-bottom: 6px solid transparent;
-  transform: rotate(-272deg);
-}
-.troubleVoiceImg img {
-  width: auto;
-  height: 240px;
+  transform: rotate(-250deg);
 }
 /* ふわふわさせる演出 */
 @keyframes fuwafuwa {
@@ -104,7 +185,7 @@ a.fuwafuwa {
 }
 /* お悩み解決部分 */
 .aboutIn {
-  padding: 15px;
+  padding: 3px;
 }
 .balance {
   width: 135px;
@@ -120,6 +201,7 @@ a.fuwafuwa {
   background: #fff;
   border-radius: 30px;
 }
+
 .is_arw_bottom {
   position: relative;
 }
@@ -310,40 +392,6 @@ p.h4.aboutTxt {
 .btnCmn01.is_area span {
   font-size: 20px;
 }
-@media screen and (max-width: 768px) {
-  p.mvCatch {
-    left: 10px;
-    bottom: 80px;
-    font-size: 28px;
-    line-height: 1.69;
-    font-weight: 700;
-  }
-  p.mvAnthor {
-    position: absolute;
-    right: 0;
-    bottom: -80px;
-  }
-  .boxCmn01_bg:before {
-    position: absolute;
-    content: "";
-    top: -87px;
-    left: 0;
-    width: 37%;
-    height: 60px;
-    background: #fff;
-    border-top-left-radius: 20px;
-  }
-  .boxCmn01_bg:after {
-    position: absolute;
-    content: "";
-    top: -87px;
-    right: 0;
-    width: 37%;
-    height: 60px;
-    background: #fff;
-    border-top-right-radius: 20px;
-  }
-}
 @media screen and (max-width: 500px) {
   .viewSp {
     display: block;
@@ -360,10 +408,64 @@ p.h4.aboutTxt {
     right: -43px;
     bottom: -60px;
   }
-  .troubleVoiceImg img {
-    width: 125px;
-    height: 200px;
+  .troubleVoiceTxt {
+    line-height: 1.36;
   }
+  .secTrouble .troubleVoice {
+    position: relative;
+    height: 600px;
+  }
+  /* 女性１ */
+  .troubleVoiceItem.item01 {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+    width: 170px;
+    height: 95px;
+    margin-bottom: 7px;
+    padding-top: 26px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+    width: 115px;
+    margin-left: 55px;
+  }
+  /* 女性２ */
+  .troubleVoiceItem.item02 {
+    position: absolute;
+    bottom: 0;
+    left: 115px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+    width: 230px;
+    height: 120px;
+    margin-bottom: 140px;
+    padding-top: 40px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+    width: 85px;
+    margin-left: 80px;
+  }
+  /* 女性３ */
+  .troubleVoiceItem.item03 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+    width: 270px;
+    height: 135px;
+    padding: 35px 0 0 15px;
+    text-align: left;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+    position: relative;
+    right: 40px;
+    width: 105px;
+    margin-left: 160px;
+  }
+
   .is_arw_top::before {
     position: absolute;
     content: "";
@@ -397,5 +499,169 @@ p.h4.aboutTxt {
     height: 60px;
     background: #fff;
     border-top-right-radius: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  p.mvCatch {
+    left: 10px;
+    bottom: 80px;
+    font-size: 28px;
+    line-height: 1.69;
+    font-weight: 700;
+  }
+  p.mvAnthor {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+  }
+  .secTrouble .troubleVoice {
+    position: relative;
+    height: 600px;
+  }
+  /* 女性１ */
+  .troubleVoiceItem.item01 {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+    width: 170px;
+    height: 95px;
+    margin-bottom: 7px;
+    padding-top: 26px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+    width: 115px;
+    margin-left: 55px;
+  }
+  /* 女性２ */
+  .troubleVoiceItem.item02 {
+    position: absolute;
+    bottom: 0;
+    left: 115px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+    width: 230px;
+    height: 120px;
+    margin-bottom: 110px;
+    padding-top: 40px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+    width: 90px;
+    margin-left: 110px;
+  }
+  /* 女性３ */
+  .troubleVoiceItem.item03 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+    width: 270px;
+    height: 135px;
+    padding: 35px 0 0 15px;
+    text-align: left;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+    position: relative;
+    right: 40px;
+    width: 105px;
+    margin-left: 160px;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg:before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -20px;
+    width: 20px;
+    height: 35px;
+    background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/ase2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 37%;
+    height: 60px;
+    background: #fff;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 37%;
+    height: 60px;
+    background: #fff;
+    border-top-right-radius: 20px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .secTrouble .troubleVoice:after {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    content: "";
+    width: 100%;
+    height: 87px;
+    background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/wave1.png)
+      repeat-x 50% 0;
+    background-size: cover;
+    z-index: 3;
+  }
+  /* 女性１ */
+  .troubleVoiceItem.item01 {
+    position: absolute;
+    bottom: 0;
+    left: 153px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+    width: 235px;
+    height: 122px;
+    margin-bottom: 15px;
+    padding-top: 40px;
+    left: -40px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+    width: 139px;
+    margin-left: 55px;
+  }
+  /* 女性２ */
+  .troubleVoiceItem.item02 {
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+    width: 270px;
+    height: 140px;
+    margin-bottom: 0;
+    padding-top: 50px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+    width: 107px;
+    margin: -2px 0 0 80px;
+  }
+  /* 女性３ */
+  .troubleVoiceItem.item03 {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+    width: 270px;
+    height: 135px;
+    padding: 35px 0 0 15px;
+    text-align: left;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+    position: relative;
+    right: 40px;
+    width: 123px;
+    margin-left: 40px;
   }
 }
