@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template-1.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
     <title>KAOwebdesigner</title>
   </head>
   <body class="bg-light">
@@ -116,7 +116,7 @@
           </a>
         </div>
         <div class="col-md-4 col-12 portfolio_box">
-         <a href="#" class="">
+         <a href="https://blogkao.net/wordpressblog/lp-page/" class="">
             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/lppage1.png" alt="">
             <div class="mask">
               <div class="portfolio_img_p">ランディングページデザインとコーディング模写（Photoshopで作成）</div>
