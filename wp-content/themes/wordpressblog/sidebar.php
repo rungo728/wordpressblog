@@ -27,7 +27,7 @@
       <?php while ( $side_query->have_posts() ) : $side_query->the_post(); ?>
         <div class="pb-5">
           <!-- サムネイル -->
-          <div class="pb-3">
+          <div class="pb-3 portfolio_box">
             <?php if ( has_post_thumbnail() ) : ?>
               <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
             <?php else : ?>

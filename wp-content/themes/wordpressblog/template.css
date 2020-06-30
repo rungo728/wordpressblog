@@ -18,7 +18,7 @@
 .btn-default:hover {
   background-color: #f6ac4d;
 }
-.img-fluid {
+/* .img-fluid {
   -moz-transition: -moz-transform 0.5s linear;
   -webkit-transition: -webkit-transform 0.5s linear;
   -o-transition: -o-transform 0.5s linear;
@@ -32,4 +32,4 @@
   -o-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
-}
+} */

@@ -14,7 +14,7 @@
                 <!-- カテゴリー -->
                 <p><a href=""><?php the_category(''); ?></a></p>
                 <!-- サムネイル -->
-                <div class="pb-3">
+                <div class="pb-3 portfolio_box">
                   <?php if ( has_post_thumbnail() ) : ?>
                     <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
                   <?php else : ?>

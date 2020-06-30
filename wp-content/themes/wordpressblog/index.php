@@ -15,12 +15,16 @@
             <div class="col-md-4 col-12">
               <div class="bg-white py-3">
                 <!-- サムネイル -->
-                <div class="pb-3">
-                  <?php if ( has_post_thumbnail() ) : ?>
-                    <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
-                  <?php else : ?>
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
-                  <?php endif; ?>
+                <div class="pb-3 portfolio_box">
+                  <a href="<?php the_permalink(); ?>">
+                    <?php if ( has_post_thumbnail() ) : ?>
+                      <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
+                    <?php else : ?>
+                      <img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" class="img-fluid" />
+                    <?php endif; ?>
+
+                  </a>
+
                 </div>
                 <!-- 記事タイトル -->
                 <h2 class="h4 px-3 pb-3"><?php the_title(); ?></h2>
@@ -52,7 +56,7 @@
                 <!-- カテゴリー -->
                 <p><a href=""><?php the_category(''); ?></a></p>
                 <!-- サムネイル -->
-                <div class="pb-3">
+                <div class="pb-3 portfolio_box">
                   <?php if ( has_post_thumbnail() ) : ?>
                     <?php the_post_thumbnail('', array( 'class' => 'img-fluid' )); ?>
                   <?php else : ?>
