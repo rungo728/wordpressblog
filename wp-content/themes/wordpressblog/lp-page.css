@@ -538,7 +538,7 @@ p.h4.aboutTxt {
   .troubleVoiceItem.item02 {
     position: absolute;
     bottom: 0;
-    left: 115px;
+    left: 95px;
   }
   .secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
     width: 230px;
@@ -561,6 +561,16 @@ p.h4.aboutTxt {
     height: 135px;
     padding: 35px 0 0 15px;
     text-align: left;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt:after {
+    position: absolute;
+    content: "";
+    right: 80px;
+    bottom: -15px;
+    border-left: 28px solid #17a2b8;
+    border-top: 17px solid transparent;
+    border-bottom: 6px solid transparent;
+    transform: rotate(-250deg);
   }
   .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
     position: relative;
@@ -663,5 +673,39 @@ p.h4.aboutTxt {
     right: 40px;
     width: 123px;
     margin-left: 40px;
+  }
+  .is_arw_top:before {
+    position: absolute;
+    content: "";
+    top: -39px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: solid #fff;
+    border-width: 43px 55px 0px;
+    border-top-color: transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 44%;
+    height: 60px;
+    background: #fff;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 44%;
+    height: 60px;
+    background: #fff;
+    border-top-right-radius: 20px;
   }
 }
