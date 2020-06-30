@@ -35,7 +35,7 @@ Template Name: ランディングページ
                   <main role="main">
                     <div id="main">
                       <!-- お悩みの声部分 -->
-                      <section class="h6 secTrouble js-inview fadeIn">
+                      <section class="h6 secTrouble js-inview fadeInUp">
                         <div class="troubleIn cf">
                           <h2 class="troubleTit is_txt_bold">
                             こんなことで
@@ -79,7 +79,7 @@ Template Name: ランディングページ
                       <!-- お悩み解決部分 -->
                       <section class="secAbout bg01">
                         <div class="pt-5 aboutIn innerCmn01 cf">
-                          <div class="p-5 aboutItem item01 boxCmn01 is_arw_bottom cf js-inview fadeIn">
+                          <div class="p-5 aboutItem item01 boxCmn01 is_arw_bottom cf js-inview fadeInUp">
                             <h2 class="h2 mb-5 aboutTit font-weight-bolder">
                               <span class="lineWaveCmn01 only_pc">
                                 <span class="lineWaveCmn01 only_sp">使える英語力を身に</span>
@@ -113,7 +113,7 @@ Template Name: ランディングページ
                               </span>
                             </p>
                           </div>
-                          <div class="my-5 py-5 aboutItem item02 boxCmn01 is_arw_top is_arw_bottom cf js-inview fadeIn">
+                          <div class="my-5 py-5 aboutItem item02 boxCmn01 is_arw_top is_arw_bottom cf js-inview fadeInUp">
                             <div class="boxCmn01_bg">
                               
                             </div>
@@ -161,7 +161,7 @@ Template Name: ランディングページ
                               </li>
                             </ul>
                           </div>
-                          <div class="my-5 py-5 aboutItem item03 boxCmn01 is_arw_top js-inview fadeIn">
+                          <div class="my-5 py-5 aboutItem item03 boxCmn01 is_arw_top js-inview fadeInUp">
                             <div class="aboutItemIn cf">
                               <div class="boxCmn01_bg"></div>
                               <p class="h4 aboutTxt font-weight-bolder">
@@ -185,7 +185,7 @@ Template Name: ランディングページ
                         </div>
                       </section>
                       <!-- お問い合わせ部分 -->
-                      <div class="cv01 boxCmn01_frame js-inview fadeIn">
+                      <div class="cv01 boxCmn01_frame js-inview fadeInUp">
                         <section class="boxCvCmn01 bg02 cf">
                           <div class="cvEx is_contact">
                             <div class="p-4 cvIn">
@@ -238,6 +238,7 @@ Template Name: ランディングページ
       <?php get_footer(); ?>
     </main>
     <!-- Optional JavaScript -->
+    <script src="<?php echo get_template_directory_uri(); ?>/scroll-fadein.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://kit.fontawesome.com/4a2fabbad9.js" crossorigin="anonymous"></script>
     <script

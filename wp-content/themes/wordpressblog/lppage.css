@@ -1,0 +1,725 @@
+* {
+  box-sizing: border-box;
+}
+
+.is_txt_bold {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "ヒラギノ角ゴ ProN W6", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
+    sans-serif;
+  font-weight: 700;
+}
+/* スクロールすると下からふわっと出てくるように */
+/* 画面外にいる状態 */
+/* 画面内に入ったらjsで
+$(this).css("opacity", "1");
+$(this).css("transform", "translateY(0)");
+を追加 */
+.fadeInUp {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+  -ms-transform: translateY(30px);
+  transform: translateY(30px);
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+div#maining {
+  position: relative;
+  background-image: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/child1.jpg);
+  padding-top: 835px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#maining:before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 100%;
+  height: 280px;
+  /* 同じ背景を入れてこっちだけぼやけさせる */
+  background-image: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/child1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* 背景をぼやけさせる */
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  z-index: 0;
+}
+p.mvCatch {
+  position: absolute;
+  top: auto;
+  bottom: 80px;
+  left: 10px;
+  line-height: 1.75;
+  font-size: 38px;
+}
+span.lineWaveCmn01 {
+  text-decoration: underline wavy yellow;
+  text-align: left;
+  letter-spacing: 3px;
+}
+p.mvAnthor {
+  position: absolute;
+  right: -52px;
+  bottom: -80px;
+}
+a.fuwafuwa {
+  display: block;
+  animation: fuwafuwa 3s infinite;
+}
+/* お悩みの声部分 */
+.secTrouble .troubleVoice {
+  position: relative;
+  height: 320px;
+}
+/* 女性１ */
+.troubleVoiceItem.item01 {
+  position: absolute;
+  bottom: 0;
+  left: 85px;
+}
+.secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+  width: 170px;
+  height: 95px;
+  margin-bottom: 7px;
+  padding-top: 26px;
+}
+.secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+  width: 115px;
+  margin-left: 55px;
+}
+/* 女性２ */
+.troubleVoiceItem.item02 {
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+}
+.secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+  width: 232px;
+  height: 120px;
+  margin-bottom: 40px;
+  padding-top: 50px;
+}
+.secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+  width: 95px;
+  margin: -2px 0 0 80px;
+}
+/* 女性３ */
+.troubleVoiceItem.item03 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+  width: 270px;
+  height: 135px;
+  padding: 35px 0 0 15px;
+  text-align: left;
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+  position: relative;
+  right: 40px;
+  width: 105px;
+  margin-left: 40px;
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceImg:before {
+  position: absolute;
+  content: "";
+  top: 7px;
+  left: -20px;
+  width: 20px;
+  height: 35px;
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/ase2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.secTrouble .troubleVoice:after {
+  position: absolute;
+  left: 0;
+  bottom: -55px;
+  content: "";
+  width: 100%;
+  height: 87px;
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/wave1.png)
+    repeat-x 50% 0;
+  background-size: cover;
+  z-index: 3;
+}
+.troubleVoiceItem {
+  position: absolute;
+}
+.troubleVoiceTxt {
+  position: relative;
+  height: 130px;
+  border-radius: 130px / 65px;
+}
+.secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt:after {
+  position: absolute;
+  content: "";
+  right: 96px;
+  bottom: -15px;
+  border-left: 31px solid #17a2b8;
+  border-top: 30px solid transparent;
+  border-bottom: 35px solid transparent;
+  transform: rotate(-410deg);
+}
+.secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt:after {
+  position: absolute;
+  content: "";
+  right: 150px;
+  bottom: -15px;
+  border-left: 31px solid #17a2b8;
+  border-top: 30px solid transparent;
+  border-bottom: 35px solid transparent;
+  transform: rotate(-410deg);
+}
+.secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt:after {
+  position: absolute;
+  content: "";
+  right: 150px;
+  bottom: -15px;
+  border-left: 28px solid #17a2b8;
+  border-top: 17px solid transparent;
+  border-bottom: 6px solid transparent;
+  transform: rotate(-250deg);
+}
+/* ふわふわさせる演出 */
+@keyframes fuwafuwa {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* お悩み解決部分 */
+.aboutIn {
+  padding: 3px;
+}
+.balance {
+  width: 135px;
+  margin-right: 5px;
+}
+.bg01 {
+  background-size: cover;
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/back2.jpg)
+    repeat 0;
+}
+.boxCmn01 {
+  position: relative;
+  background: #fff;
+  border-radius: 30px;
+}
+
+.is_arw_bottom {
+  position: relative;
+}
+.is_arw_bottom:after {
+  position: absolute;
+  content: "";
+  top: 99.5%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 28px 40px;
+  border-top-color: #fff;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.is_arw_top {
+  position: relative;
+}
+.is_arw_top:before {
+  position: absolute;
+  content: "";
+  top: -39px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: solid #fff;
+  border-width: 41px 66px 0;
+  border-top-color: transparent;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.is_arw_top:after {
+  position: absolute;
+  content: "";
+  top: 99.5%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 28px 40px;
+  border-top-color: #76cbe2;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.item02 .boxCmn01_bg:before,
+.item02 .boxCmn01_bg:after {
+  background: #76cbe2;
+}
+.boxCmn01_bg {
+  position: relative;
+}
+.boxCmn01_bg:before {
+  position: absolute;
+  content: "";
+  top: -87px;
+  left: 0;
+  width: 41%;
+  height: 60px;
+  background: #fff;
+  border-top-left-radius: 20px;
+}
+.boxCmn01_bg:after {
+  position: absolute;
+  content: "";
+  top: -87px;
+  right: 0;
+  width: 41%;
+  height: 60px;
+  background: #fff;
+  border-top-right-radius: 20px;
+}
+.cf {
+  position: relative;
+}
+.cf:after {
+  position: absolute;
+  content: "";
+  display: block;
+  clear: both;
+}
+.viewSp {
+  display: none;
+}
+p.h5.aboutTxt {
+  line-height: 1.4;
+}
+p.mb-5.aboutTxt {
+  text-align: center;
+  color: #fff;
+  line-height: 1.9;
+}
+p.h4.aboutTxt {
+  line-height: 1.7;
+}
+.aboutItem.item02 {
+  background: #76cbe2;
+}
+.is_large {
+  font-size: 30px;
+  line-height: 1.2;
+}
+.aboutPointItem {
+  float: left;
+  margin-right: 30px;
+  padding: 14px 10px 14px 13px;
+  border-radius: 6px;
+  background: #fff;
+}
+.aboutPointIco {
+  padding: 32px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #525252;
+  background-color: yellow;
+  border: dotted 3px #a7a7a7;
+}
+.my-5.py-5.aboutItem.item03:after {
+  display: none;
+}
+/* お問い合わせ部分 */
+.boxCmn01_frame {
+  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/study1.png);
+  padding-top: 500px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.boxCvCmn01 {
+  color: #3e210d;
+  font-size: 25px;
+}
+.cvEx.is_contact {
+  background: #f7eeea;
+}
+.cvContactTit {
+  text-align: center;
+  border-bottom: solid 0.26667vw #e1d1cb;
+}
+.telCmn01 a {
+  position: relative;
+  display: inline-block;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  text-decoration: none;
+  color: #3e210d;
+}
+.is_font_roboto {
+  font-family: "Roboto", sans-serif;
+}
+.telNum span[data-rubi] {
+  position: relative;
+}
+.telNum span[data-rubi]:before {
+  position: absolute;
+  top: -18px;
+  left: -12px;
+  content: attr(data-rubi);
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  width: 150%;
+  letter-spacing: 10px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",
+    "ヒラギノ角ゴ ProN W6", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
+    sans-serif;
+  font-weight: 700;
+}
+.btnCmn01.is_area {
+  max-width: 320px;
+  margin: auto;
+}
+.btnCmn01.is_area a {
+  padding: 20px 0;
+  color: #3e210d;
+  border: solid 2px #3e210d;
+  background: #fff;
+  display: block;
+  text-decoration: none;
+  border-radius: 60px;
+  text-align: center;
+}
+.btnCmn01.is_area span {
+  font-size: 20px;
+}
+@media screen and (min-width: 992px) {
+  .secTrouble .troubleVoice:after {
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    content: "";
+    width: 100%;
+    height: 87px;
+    background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/wave1.png)
+      repeat-x 50% 0;
+    background-size: cover;
+    z-index: 3;
+  }
+  /* 女性１ */
+  .troubleVoiceItem.item01 {
+    position: absolute;
+    bottom: 0;
+    left: 153px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+    width: 235px;
+    height: 122px;
+    margin-bottom: 15px;
+    padding-top: 40px;
+    left: -40px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+    width: 139px;
+    margin-left: 55px;
+  }
+  /* 女性２ */
+  .troubleVoiceItem.item02 {
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+    width: 270px;
+    height: 140px;
+    margin-bottom: 0;
+    padding-top: 50px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+    width: 107px;
+    margin: -2px 0 0 80px;
+  }
+  /* 女性３ */
+  .troubleVoiceItem.item03 {
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+    width: 270px;
+    height: 135px;
+    padding: 35px 0 0 15px;
+    text-align: left;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+    position: relative;
+    right: 40px;
+    width: 123px;
+    margin-left: 40px;
+  }
+  .is_arw_top:before {
+    position: absolute;
+    content: "";
+    top: -39px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: solid #fff;
+    border-width: 40px 56px 0;
+    border-top-color: transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 44%;
+    height: 60px;
+    background: #fff;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 44%;
+    height: 60px;
+    background: #fff;
+    border-top-right-radius: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  p.mvCatch {
+    left: 10px;
+    bottom: 80px;
+    font-size: 28px;
+    line-height: 1.69;
+    font-weight: 700;
+  }
+  p.mvAnthor {
+    position: absolute;
+    right: 0;
+    bottom: -80px;
+  }
+  .secTrouble .troubleVoice {
+    position: relative;
+    height: 600px;
+  }
+  /* 女性１ */
+  .troubleVoiceItem.item01 {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+    width: 170px;
+    height: 95px;
+    margin-bottom: 7px;
+    padding-top: 26px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+    width: 115px;
+    margin-left: 55px;
+  }
+  /* 女性２ */
+  .troubleVoiceItem.item02 {
+    position: absolute;
+    bottom: 0;
+    left: 95px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+    width: 230px;
+    height: 120px;
+    margin-bottom: 110px;
+    padding-top: 40px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+    width: 90px;
+    margin-left: 110px;
+  }
+  /* 女性３ */
+  .troubleVoiceItem.item03 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+    width: 270px;
+    height: 135px;
+    padding: 35px 0 0 15px;
+    text-align: left;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt:after {
+    position: absolute;
+    content: "";
+    right: 80px;
+    bottom: -15px;
+    border-left: 28px solid #17a2b8;
+    border-top: 17px solid transparent;
+    border-bottom: 6px solid transparent;
+    transform: rotate(-250deg);
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+    position: relative;
+    right: 40px;
+    width: 105px;
+    margin-left: 160px;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg:before {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -20px;
+    width: 20px;
+    height: 35px;
+    background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/ase2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 37%;
+    height: 60px;
+    background: #fff;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 37%;
+    height: 60px;
+    background: #fff;
+    border-top-right-radius: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .viewSp {
+    display: block;
+  }
+  p.mvCatch {
+    left: 10px;
+    bottom: 50px;
+    font-size: 24px;
+    line-height: 1.69;
+    font-weight: 700;
+  }
+  p.mvAnthor {
+    position: absolute;
+    right: -43px;
+    bottom: -60px;
+  }
+  .troubleVoiceTxt {
+    line-height: 1.36;
+  }
+  .secTrouble .troubleVoice {
+    position: relative;
+    height: 600px;
+  }
+  /* 女性１ */
+  .troubleVoiceItem.item01 {
+    position: absolute;
+    bottom: 0;
+    left: 14px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceTxt {
+    width: 170px;
+    height: 95px;
+    margin-bottom: 7px;
+    padding-top: 26px;
+  }
+  .secTrouble .troubleVoiceItem.item01 .troubleVoiceImg {
+    width: 115px;
+    margin-left: 55px;
+  }
+  /* 女性２ */
+  .troubleVoiceItem.item02 {
+    position: absolute;
+    bottom: 0;
+    left: 115px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceTxt {
+    width: 230px;
+    height: 120px;
+    margin-bottom: 140px;
+    padding-top: 40px;
+  }
+  .secTrouble .troubleVoiceItem.item02 .troubleVoiceImg {
+    width: 85px;
+    margin-left: 80px;
+  }
+  /* 女性３ */
+  .troubleVoiceItem.item03 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceTxt {
+    width: 270px;
+    height: 135px;
+    padding: 35px 0 0 15px;
+    text-align: left;
+  }
+  .secTrouble .troubleVoiceItem.item03 .troubleVoiceImg {
+    position: relative;
+    right: 40px;
+    width: 105px;
+    margin-left: 160px;
+  }
+
+  .is_arw_top::before {
+    position: absolute;
+    content: "";
+    top: -41px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: solid #fff;
+    border-width: 32px 45px 14px;
+    border-top-color: transparent;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 41%;
+    height: 60px;
+    background: #fff;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 41%;
+    height: 60px;
+    background: #fff;
+    border-top-right-radius: 20px;
+  }
+}
