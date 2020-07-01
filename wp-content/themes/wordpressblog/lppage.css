@@ -925,13 +925,6 @@ p.h4.aboutTxt {
     width: 58px;
   }
   .telCmn01 a {
-    position: relative;
-    display: inline-block;
     font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 0;
-    line-height: 1;
-    text-decoration: none;
-    color: #3e210d;
   }
 }
