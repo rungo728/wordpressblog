@@ -12,7 +12,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main-1.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
     <title>KAOwebdesigner</title>
   </head>
@@ -119,7 +119,7 @@
          <a href="https://blogkao.net/wordpressblog/lp-page/" class="">
             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/lppage1.png" alt="">
             <div class="mask">
-              <div class="portfolio_img_p">ランディングページデザインとコーディング模写（Photoshopで作成）</div>
+              <div class="portfolio_img_p">ランディングページデザイン・コーディング模写（Photoshopで作成）</div>
             </div>
           </a>
         </div>

@@ -9,7 +9,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main-1.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lppage.css" />
     <!-- <title>KAblog</title> -->
