@@ -80,7 +80,7 @@ Template Name: ランディングページ
                       <section class="secAbout bg01">
                         <div class="pt-5 aboutIn innerCmn01 cf">
                           <div class="p-5 aboutItem item01 boxCmn01 is_arw_bottom cf js-inview fadeInUp">
-                            <h2 class="h2 mb-5 aboutTit font-weight-bolder">
+                            <h2 class="h3 mb-5 aboutTit font-weight-bolder">
                               <span class="lineWaveCmn01 only_pc">
                                 <span class="lineWaveCmn01 only_sp">使える英語力を身に</span>
                                 <br class="viewSp"><span class="lineWaveCmn01 only_sp">つけるには</span>
@@ -117,7 +117,7 @@ Template Name: ランディングページ
                             <div class="boxCmn01_bg">
                               
                             </div>
-                            <p class="h5 mb-5 aboutTxt font-weight-bolder">
+                            <p class="h6 mb-5 aboutTxt font-weight-bolder">
                               <span class="txt01">偏った英語力では、将来役立つ
                                 <span class="text-warning">「使える
                                   <br class="viewSp">英語力」
@@ -132,8 +132,8 @@ Template Name: ランディングページ
                                 </span>
                               </span>
                             </p>
-                            <ul class="d-flex aboutPoint cf">
-                              <li class="col-5 aboutPointItem">
+                            <ul class="p-4 aboutPoint cf">
+                              <li class="m-1 aboutPointItem">
                                 <p class="aboutPointIco rounded-circle font-weight-bolder">
                                   楽しく
                                   <br>
@@ -147,7 +147,7 @@ Template Name: ランディングページ
                                   <img src="<?php echo get_template_directory_uri(); ?>/images/img_about_point01.png" alt="">
                                 </div>
                               </li>
-                              <li class="col-5 aboutPointItem">
+                              <li class="m-1 aboutPointItem">
                                 <p class="aboutPointIco rounded-circle font-weight-bolder">無理なく
                                   <br>続ける
                                 </p>
@@ -191,8 +191,8 @@ Template Name: ランディングページ
                             <div class="p-4 cvIn">
                               <p class="pb-3 cvContactTit font-weight-bolder">お問い合わせ</p>
                               <div class="pt-3 cvContactTel">
-                                <p class="telCmn01">
-                                  <i class="fas fa-phone-alt"></i>
+                                <p class="d-inline-flex telCmn01">
+                                  <i class="pr-2 fas fa-phone-alt"></i>
                                   <a href="#" class="is_font_roboto">
                                     <span class="telNum">0120-
                                       <span data-rubi="いざ">13
