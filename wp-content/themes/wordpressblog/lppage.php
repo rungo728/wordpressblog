@@ -80,10 +80,10 @@ Template Name: ランディングページ
                       <section class="secAbout bg01">
                         <div class="pt-5 aboutIn innerCmn01 cf">
                           <div class="p-5 aboutItem item01 boxCmn01 is_arw_bottom cf js-inview fadeInUp">
-                            <h2 class="h3 mb-5 aboutTit font-weight-bolder">
-                              <span class="lineWaveCmn01 only_pc">
-                                <span class="lineWaveCmn01 only_sp">使える英語力を身に</span>
-                                <br class="viewSp"><span class="lineWaveCmn01 only_sp">つけるには</span>
+                            <h2 class="h4 mb-5 aboutTit font-weight-bolder">
+                              <span class="lineWaveCmn02 only_pc">
+                                <span class="lineWaveCmn02 only_sp">使える英語力を身に</span>
+                                <br class="viewSp"><span class="lineWaveCmn02 only_sp">つけるには</span>
                               </span>
                             </h2>
                             <p class="h5 aboutTxt font-weight-bolder">
@@ -117,7 +117,7 @@ Template Name: ランディングページ
                             <div class="boxCmn01_bg">
                               
                             </div>
-                            <p class="h6 mb-5 aboutTxt font-weight-bolder">
+                            <p class="h6 p-4 aboutTxt font-weight-bolder">
                               <span class="txt01">偏った英語力では、将来役立つ
                                 <span class="text-warning">「使える
                                   <br class="viewSp">英語力」

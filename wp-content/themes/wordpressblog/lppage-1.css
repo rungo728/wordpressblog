@@ -24,7 +24,7 @@ $(this).css("transform", "translateY(0)");
 }
 div#maining {
   position: relative;
-  background-image: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/child1.jpg);
+  background-image: url("images/child1.jpg");
   padding-top: 835px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@ div#maining {
   width: 100%;
   height: 280px;
   /* 同じ背景を入れてこっちだけぼやけさせる */
-  background-image: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/child1.jpg);
+  background-image: url("images/child1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -56,9 +56,27 @@ p.mvCatch {
   font-size: 38px;
 }
 span.lineWaveCmn01 {
+  position: relative;
+  text-align: left;
+  line-height: 50px;
+}
+span.lineWaveCmn02 {
   text-decoration: underline wavy yellow;
   text-align: left;
-  letter-spacing: 3px;
+  line-height: 50px;
+  font-size: 36px;
+}
+/* 波線部分 */
+span.lineWaveCmn01::after {
+  background: url("images/wave2.png");
+  background-size: cover;
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  bottom: -19px;
+  left: -8px;
 }
 p.mvAnthor {
   position: absolute;
@@ -131,7 +149,7 @@ a.fuwafuwa {
   left: -20px;
   width: 20px;
   height: 35px;
-  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/ase2.png);
+  background: url("images/ase2.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -142,8 +160,7 @@ a.fuwafuwa {
   content: "";
   width: 100%;
   height: 87px;
-  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/wave1.png)
-    repeat-x 50% 0;
+  background: url("images/wave1.png") repeat-x 50% 0;
   background-size: cover;
   z-index: 3;
 }
@@ -207,15 +224,17 @@ a.fuwafuwa {
 }
 .bg01 {
   background-size: cover;
-  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/back2.jpg)
-    repeat 0;
+  background: url("images/back2.jpg") repeat 0;
 }
 .boxCmn01 {
   position: relative;
   background: #fff;
   border-radius: 30px;
 }
-
+.boxCmn01.is_arw_top:after {
+  position: absolute;
+  content: "";
+}
 .is_arw_bottom {
   position: relative;
 }
@@ -306,7 +325,7 @@ a.fuwafuwa {
 p.h5.aboutTxt {
   line-height: 1.4;
 }
-p.mb-5.aboutTxt {
+p.p-4.aboutTxt {
   text-align: center;
   color: #fff;
   line-height: 1.9;
@@ -350,10 +369,12 @@ p.h4.aboutTxt {
   line-height: 2.44;
   display: inline-block;
 }
-
+.my-5.py-5.aboutItem.item03:after {
+  display: none;
+}
 /* お問い合わせ部分 */
 .boxCmn01_frame {
-  background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/study1.png);
+  background: url("images/study1.png");
   padding-top: 500px;
   background-size: 100% auto;
   background-position: center;
@@ -418,6 +439,7 @@ p.h4.aboutTxt {
 .btnCmn01.is_area span {
   font-size: 20px;
 }
+
 @media screen and (min-width: 992px) {
   .secTrouble .troubleVoice:after {
     position: absolute;
@@ -426,8 +448,7 @@ p.h4.aboutTxt {
     content: "";
     width: 100%;
     height: 87px;
-    background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/wave1.png)
-      repeat-x 50% 0;
+    background: url("images/wave1.png") repeat-x 50% 0;
     background-size: cover;
     z-index: 3;
   }
@@ -632,7 +653,7 @@ p.h4.aboutTxt {
     left: -20px;
     width: 20px;
     height: 35px;
-    background: url(http://localhost:8888/wordpressblog/wp-content/uploads/2020/06/ase2.png);
+    background: url("images/ase2.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -866,6 +887,12 @@ p.h4.aboutTxt {
     border-bottom: 6px solid transparent;
     transform: rotate(-270deg);
   }
+  span.lineWaveCmn02 {
+    text-decoration: underline wavy yellow;
+    text-align: left;
+    line-height: 50px;
+    font-size: 27px;
+  }
   .is_arw_top::before {
     position: absolute;
     content: "";
@@ -926,5 +953,45 @@ p.h4.aboutTxt {
   }
   .telCmn01 a {
     font-size: 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* 女性１ */
+  .troubleVoiceItem.item01 {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+  }
+  /* 女性２ */
+  .troubleVoiceItem.item02 {
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+  }
+  /* 女性３ */
+  .troubleVoiceItem.item03 {
+    position: absolute;
+    right: 160px;
+    bottom: 0;
+  }
+  .boxCmn01_bg:before {
+    position: absolute;
+    content: "";
+    top: -87px;
+    left: 0;
+    width: 45%;
+    height: 60px;
+    background: #fff;
+    border-top-left-radius: 20px;
+  }
+  .boxCmn01_bg:after {
+    position: absolute;
+    content: "";
+    top: -87px;
+    right: 0;
+    width: 45%;
+    height: 60px;
+    background: #fff;
+    border-top-right-radius: 20px;
   }
 }
