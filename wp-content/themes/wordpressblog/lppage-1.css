@@ -24,7 +24,7 @@ $(this).css("transform", "translateY(0)");
 }
 div#maining {
   position: relative;
-  background-image: url("images/child1.jpg");
+  background-image: url("images/child2.png");
   padding-top: 835px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +38,7 @@ div#maining {
   width: 100%;
   height: 280px;
   /* 同じ背景を入れてこっちだけぼやけさせる */
-  background-image: url("images/child1.jpg");
+  background-image: url("images/child2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
