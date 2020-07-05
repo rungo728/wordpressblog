@@ -12,7 +12,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main-1.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main1.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
     <title>KAOwebdesigner</title>
   </head>
@@ -100,16 +100,16 @@
       </div>
       <div class="row">
         <div class="col-md-4 col-12 portfolio_box">
-          <a href="#" class="">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/Web1280–1.png" alt="">
+          <a href="https://drive.google.com/drive/folders/1IFtk_6p-gwqXAdRGOod2BhbI_Fu7y29O" class="">
+            <img  class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/designportfolio1-1.png" alt="">
             <div class="mask">
-              <div class="portfolio_img_p">blogサイトデザイン<br>（XDで作成）</div>
+              <div class="portfolio_img_p">デザイン摸写（春帆楼）<br>（XDで作成）</div>
             </div>
           </a>
         </div>
         <div class="col-md-4 col-12 portfolio_box">
-          <a href="#" class="">
-            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/kaoec_top.png" alt="">
+          <a href="https://drive.google.com/drive/folders/1IflVuZS1J_eKv1AI9DEj4ePRY8hrVelV" class="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/kaoec_top1.png" alt="">
             <div class="mask">
               <div class="portfolio_img_p">ECサイトデザイン（Photoshopで作成）</div>
             </div>
@@ -120,6 +120,30 @@
             <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/lppage1.png" alt="">
             <div class="mask">
               <div class="portfolio_img_p">ランディングページデザイン・コーディング模写（Photoshopで作成）</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-12 portfolio_box">
+          <a href="https://drive.google.com/drive/folders/1BvT1zZ-Tr-Mv_40dqdgTYcu9P55hrMHn" class="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/stayhome1.png" alt="">
+            <div class="mask">
+              <div class="portfolio_img_p">ロゴデザイン（stayhome）<br>（Illustratorで作成）</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-12 portfolio_box">
+          <a href="https://drive.google.com/drive/folders/1IflVuZS1J_eKv1AI9DEj4ePRY8hrVelV" class="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/KACOSKitchen.png" alt="">
+            <div class="mask">
+              <div class="portfolio_img_p">サムネイルデザイン<br>（Illustratorで作成）</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-12 portfolio_box">
+         <a href="https://drive.google.com/drive/folders/15DA8YpCFQPS8DjyRuxIphKcDxbjuOmP2" class="">
+            <img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/navigation_readmore.png" alt="">
+            <div class="mask">
+              <div class="portfolio_img_p">READMORE >></div>
             </div>
           </a>
         </div>
