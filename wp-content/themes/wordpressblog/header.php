@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main1.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lppage-1.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lp-page-1.css" />
     <!-- <title>KAblog</title> -->
     <?php wp_head(); ?>
   </head>
