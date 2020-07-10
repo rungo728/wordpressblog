@@ -1,2 +1,2 @@
-７４６<?php
+<?php
 // Silence is golden.
