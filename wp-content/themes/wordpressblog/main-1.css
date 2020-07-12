@@ -42,6 +42,12 @@ ul {
 .carousel-item img {
   object-fit: cover;
 }
+@media screen and (max-width: 500px) {
+  .carousel-item img {
+    object-fit: cover;
+    max-height: 360px;
+  }
+}
 @media screen and (max-width: 375px) {
   .carousel-item img {
     object-fit: cover;
