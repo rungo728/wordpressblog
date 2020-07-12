@@ -12,7 +12,7 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main1.css" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main-1.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
     <title>KAOwebdesigner</title>
   </head>
@@ -63,6 +63,14 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
+          <div class="carousel-item">
+            <a href="https://blogkao.net/wp/lppage3/">
+              <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/lppage3.png" class="d-block w-100" alt="...">
+            </a>
+            <div class="carousel-caption d-none d-md-block text-white">
+              <h5>ランディングページ模写</h5>
+            </div>
+          </div>
           <div class="carousel-item active">
             <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/photoshop1.jpg" class="d-block w-100 " alt="...">
             <div class="carousel-caption d-none d-md-block">
@@ -75,12 +83,7 @@
               <h5>ILLUstrator</h5>
             </div>
           </div>
-          <div class="carousel-item">
-            <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/program1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block text-white">
-              <h5>Programing</h5>
-            </div>
-          </div>
+
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
