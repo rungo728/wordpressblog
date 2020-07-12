@@ -13,7 +13,6 @@ ul {
 .profile {
   width: 200px;
 }
-.portfolio_box {
   position: relative;
   overflow: hidden;
 }
@@ -38,4 +37,13 @@ ul {
 .portfolio_box:hover a .mask {
   -webkit-transform: scale(1); /* 大きさを１にして表示する */
   transform: scale(1);
+}
+.carousel-item img {
+  object-fit: cover;
+}
+@media screen and (max-width: 375px) {
+  .carousel-item img {
+    object-fit: cover;
+    max-height: 280px;
+  }
 }
