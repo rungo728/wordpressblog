@@ -13,6 +13,7 @@ ul {
 .profile {
   width: 200px;
 }
+.portfolio_box {
   position: relative;
   overflow: hidden;
 }
