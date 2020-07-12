@@ -63,7 +63,7 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item">
+          <div class="carousel-item active">
             <a href="https://blogkao.net/wp/lppage3/">
               <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/lppage3.png" class="d-block w-100" alt="...">
             </a>
@@ -71,7 +71,7 @@
               <h5>ランディングページ模写</h5>
             </div>
           </div>
-          <div class="carousel-item active">
+          <div class="carousel-item">
             <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/photoshop1.jpg" class="d-block w-100 " alt="...">
             <div class="carousel-caption d-md-block">
               <h5>PHotoshop</h5>
