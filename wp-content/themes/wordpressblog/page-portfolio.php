@@ -68,19 +68,21 @@
               <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/lppage3.png" class="d-block w-100" alt="...">
             </a>
             <div class="carousel-caption d-md-block text-white">
-              <h5>ランディングページ模写</h5>
+              <h5>lppage模写</h5>
             </div>
           </div>
           <div class="carousel-item">
-            <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/photoshop1.jpg" class="d-block w-100 " alt="...">
+            <a href="https://www.figma.com/file/3DMllv5kDiyeJNbXzoNy8e/LP-page%EF%BC%88%E5%85%AC%E9%96%8B%E7%94%A8%EF%BC%89?node-id=0%3A1">
+              <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/lpdesign1.png" class="d-block w-100 " alt="...">
+            </a>
+            <div class="carousel-caption d-md-block">
+              <h5>lpdesign</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+              <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/photoshop1.jpg" class="d-block w-100" alt="...">            
             <div class="carousel-caption d-md-block">
               <h5>PHotoshop</h5>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img style="height:500px;" src="<?php echo get_template_directory_uri(); ?>/images/illustration2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h5>ILLUstrator</h5>
             </div>
           </div>
 
