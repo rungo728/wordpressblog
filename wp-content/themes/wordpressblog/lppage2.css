@@ -55,3 +55,40 @@ li.header-navItem:first-child {
   transition: transform 0.2s, -webkit-transform 0.2s;
   width: 100%;
 }
+.hero {
+  background-image: url(images/mv.png);
+  height: 648px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-inner {
+  padding: 218px 20px 0 0;
+}
+.hero-content {
+  margin-left: auto;
+  max-width: 524px;
+}
+.hero-ttl {
+  line-height: 1.5;
+  font-size: 25px;
+  font-weight: bold;
+}
+.hero-txt {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 1.45;
+  margin-top: 35px;
+  text-align: left;
+}
+.hero-link {
+  display: block;
+  color: #fff;
+  background-color: #ffaa3b;
+  border-radius: 10px;
+  line-height: 50px;
+  margin-top: 40px;
+  text-align: center;
+  width: 280px;
+  -webkit-box-shadow: 0 3px 5px rgba(62, 62, 62, 0.2);
+  box-shadow: 0 3px 5px rgba(62, 62, 62, 0.2);
+}

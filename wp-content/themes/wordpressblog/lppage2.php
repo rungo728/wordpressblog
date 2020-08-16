@@ -11,10 +11,13 @@ Template Name: ランディングページ２
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lppage2.css" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/lppage.js" ></script>
   <title>KA FREELANCE
   </title>
 </head>
 <body>
+  <!-- ヘッダー -->
   <header class="header">
     <h1 class="header-ttl">
       <img width="240" height="160" src="<?php echo get_template_directory_uri(); ?>/images/kafreelance2.png" alt="KAFREELANCE">
@@ -45,6 +48,22 @@ Template Name: ランディングページ２
       </ul>
     </nav>
   </header>
+  <!-- ヒーロー -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h2 class="hero-ttl">
+          詩が生れて、画が出来る。<br>とかくに人の世は住みにくい。
+        </h2>
+        <p class="hero-txt">
+          どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+        </p>
+        <a href="#contact" class="hero-link">お問い合わせしてみる</a>
+      </div>
+    </div>
+
+  </div>
+
   
 </body>
 </html>
