@@ -1,0 +1,57 @@
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+.header {
+  height: 80px;
+  text-align: center;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.1);
+  position: fixed;
+  /* 中央に持ってくるため */
+  right: 0;
+  top: 0;
+  left: 0;
+}
+.header-ttl {
+  display: none;
+}
+.header-nav {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+.headernavList {
+  display: flex;
+}
+.header-navItem {
+  margin-left: 40px;
+}
+li.header-navItem:first-child {
+  margin: 0;
+}
+.header-navLink {
+  color: #3e3e3e;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  padding: 10px 0;
+}
+.header-navLink:after {
+  background: #3e3e3e;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  width: 100%;
+}
