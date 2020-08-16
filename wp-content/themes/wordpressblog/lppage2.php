@@ -15,7 +15,7 @@ Template Name: ランディングページ２
   </title>
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1 class="header-ttl">
       <img width="240" height="160" src="<?php echo get_template_directory_uri(); ?>/images/kafreelance2.png" alt="KAFREELANCE">
     </h1>
@@ -40,7 +40,7 @@ Template Name: ランディングページ２
           <a href="#faqs" class="header-navLink js-navLink">FAQs</a>
         </li>
         <li class="header-navItem">
-          <a href="#contacts" class="header-navLink js-navLink">Contacts</a>
+          <a href="#contacts" class="header-navLink js-navLink">Contact</a>
         </li>
       </ul>
     </nav>
