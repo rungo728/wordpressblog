@@ -8,7 +8,7 @@ Template Name: ランディングページ２
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lppage2.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lp-page2.css" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -61,9 +61,44 @@ Template Name: ランディングページ２
         <a href="#contact" class="hero-link">お問い合わせしてみる</a>
       </div>
     </div>
-
   </div>
-
+  <main>
+    <!-- ニュース -->
+    <section class="news">
+      <div class="news-inner">
+        <h2 class="util-ttl">News</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <a href="#" class="news-itemLink">
+              <time class="news-itemDate" datetime="2019-02-01">2019-02-01</time>
+              <div class="news-itemCategory">カテゴリー</div>
+              <p class="news-itemTxt">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#" class="news-itemLink">
+              <time class="news-itemDate" datetime="2019-02-01">2019-02-01</time>
+              <div class="news-itemCategory">カテゴリー</div>
+              <p class="news-itemTxt">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </a>
+          </li>
+          <li class="news-item">
+            <a href="#" class="news-itemLink">
+              <time class="news-itemDate" datetime="2019-02-01">2019-02-01</time>
+              <div class="news-itemCategory">カテゴリー</div>
+              <p class="news-itemTxt">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</p>
+            </a>
+          </li>
+        </ul>
+        <div class="util-linkBox">
+          <a href="#" class="util-link">MORE</a>
+        </div>
+      </div>
+    </section>
+    <section class="service">
+      <h2 class="util-ttl">Service</h2>
+    </section>
+  </main>
   
 </body>
 </html>
