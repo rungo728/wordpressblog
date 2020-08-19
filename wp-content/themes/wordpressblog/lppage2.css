@@ -329,13 +329,19 @@ li.header-navItem:first-child {
   color: #fff;
   text-align: center;
   width: 30%;
+  border-bottom: solid 1px #fff;
 }
 .price-table td {
   background: #fff;
+  border-bottom: solid 1px #707070;
 }
 .price-table th,
 .price-table td {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding: 8px 24px;
+}
+.price-txt {
+  font-size: 12px;
+  margin-top: 16px;
 }
