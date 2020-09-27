@@ -498,7 +498,7 @@
                 <img class="img-fluid rounded-circle profile" src="<?php echo get_template_directory_uri(); ?>/images/profile1.png" alt="">
               </div>
               <p>
-                料理・デザイン・プログラミングを愛しております,転職活動内容も発信,経歴：派遣事務→正社員事務9年→派遣経理（今ココ）→TECH56期卒業/働きながら転職活動しながらフリーで案件依頼を受けながら実績作りに励んでいます。
+                デザイン・プログラミングを愛しております,転職活動内容も発信,経歴：派遣事務→正社員事務9年→派遣経理（今ココ）→TECH56期卒業/働きながら転職活動、案件提案をしながらデザイン・プログラミングを学習中。
               </p>
             </div>
             <div class="col-md-4 col-12">
