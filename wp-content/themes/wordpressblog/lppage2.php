@@ -8,7 +8,7 @@ Template Name: ランディングページ２
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lppage2.css" />
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/lp-page2.css" />
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/reset.css" />
   <!-- グーグルフォントの設定 -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@ Template Name: ランディングページ２
   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
   integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
   crossorigin="anonymous"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/lppage.js" ></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/lp-page.js" ></script>
   <title>KA FREELANCE
   </title>
 </head>
@@ -126,9 +126,9 @@ Template Name: ランディングページ２
     <!-- 実績部分 -->
     <section class="results">
       <h2 class="util-ttl">Results</h2>
-      <div class="results-container swiper-container swiper-container-initialized swiper-container-horizontal">
+      <div class="results-container swiper-container">
         <ul class="results-list swiper-wrapper">
-          <li class="results-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active">
+          <li class="results-item swiper-slide ">
             <a href="#" class="results-itemLink">
               <figure class="results-itemFig">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/slide1.png" alt="">
@@ -139,7 +139,7 @@ Template Name: ランディングページ２
               </div>
             </a>
           </li>
-          <li class="results-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active">
+          <li class="results-item swiper-slide ">
             <a href="#" class="results-itemLink">
               <figure class="results-itemFig">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/slide1.png" alt="">
@@ -150,7 +150,7 @@ Template Name: ランディングページ２
               </div>
             </a>
           </li>
-          <li class="results-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active">
+          <li class="results-item swiper-slide ">
             <a href="#" class="results-itemLink">
               <figure class="results-itemFig">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/slide1.png" alt="">
@@ -161,7 +161,7 @@ Template Name: ランディングページ２
               </div>
             </a>
           </li>
-          <li class="results-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active">
+          <li class="results-item swiper-slide ">
             <a href="#" class="results-itemLink">
               <figure class="results-itemFig">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/slide1.png" alt="">
@@ -172,29 +172,7 @@ Template Name: ランディングページ２
               </div>
             </a>
           </li>
-          <li class="results-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active">
-            <a href="#" class="results-itemLink">
-              <figure class="results-itemFig">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/slide1.png" alt="">
-              </figure>
-              <div class="results-itemLinkInner">
-                <h3 class="results-itemTtl">とかくに人の世は住みにくい。</h3>
-                <p class="results-itemTxt">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-              </div>
-            </a>
-          </li>
-          <li class="results-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active">
-            <a href="#" class="results-itemLink">
-              <figure class="results-itemFig">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/slide1.png" alt="">
-              </figure>
-              <div class="results-itemLinkInner">
-                <h3 class="results-itemTtl">とかくに人の世は住みにくい。</h3>
-                <p class="results-itemTxt">どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。</p>
-              </div>
-            </a>
-          </li>
-          <li class="results-item swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active">
+          <li class="results-item swiper-slide ">
             <a href="#" class="results-itemLink">
               <figure class="results-itemFig">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/slide1.png" alt="">
@@ -207,16 +185,11 @@ Template Name: ランディングページ２
           </li>
         </ul>
         <!-- 前ページボタン -->
-        <div class="swiper-button-prev"></div>
+        <!-- <div class="swiper-button-prev"></div> -->
         <!-- 次ページボタン -->
-        <div class="swiper-button-next"></div>
+        <!-- <div class="swiper-button-next"></div> -->
       </div>
       <div class="results-pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-        <span class="swiper-pagination-bullet"></span>
-        <span class="swiper-pagination-bullet"></span>
-        <span class="swiper-pagination-bullet"></span>
-        <span class="swiper-pagination-bullet"></span>
-        <span class="swiper-pagination-bullet"></span>
       </div>
       <div class="util-linkBox">
         <a href="#" class="util-link mod-light">VIEW ALL</a>
