@@ -4,7 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <!-- twitterカード設定 -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kao11designer" />
+    <meta property="og:url" content="https://blogkao.net/wordpressblog/portfolio" />
+    <meta property="og:title" content="" /> 
+    <meta property="og:description" content="Web制作活動の軌跡や実績を紹介するポートフォリオとして運営" /> 
+    <meta property="og:image" content="https://blogkao.net/wordpressblog/portfolio/images/twittercard.png" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -12,6 +18,10 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" >
+    <link rel="icon" href="/favicon.ico" >
+    <!-- original -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main-1.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
     <title>KAOwebdesigner</title>
@@ -495,7 +505,7 @@
                 <h4 class="d-inline-block py-3 border-bottom border-info">ABout</h4>
               </div>
               <div class="mx-5">
-                <img class="img-fluid rounded-circle profile" src="<?php echo get_template_directory_uri(); ?>/images/profile1.png" alt="">
+                <img class="img-fluid rounded-circle profile" src="<?php echo get_template_directory_uri(); ?>/images/profile2.jpg" alt="">
               </div>
               <p>
                 デザイン・プログラミングを愛しております,転職活動内容も発信,経歴：派遣事務→正社員事務9年→派遣経理（今ココ）→TECH56期卒業/働きながら転職活動、案件提案をしながらデザイン・プログラミングを学習中。
