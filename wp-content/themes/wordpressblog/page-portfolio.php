@@ -7,10 +7,10 @@
     <!-- twitterカード設定 -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@kao11designer" />
-    <meta property="og:url" content="https://blogkao.net/wordpressblog/portfolio" />
+    <meta property="og:url" content="https://blogkao.net/wordpressblog/" />
     <meta property="og:title" content="" /> 
     <meta property="og:description" content="Web制作活動の軌跡や実績を紹介するポートフォリオとして運営" /> 
-    <meta property="og:image" content="https://blogkao.net/wordpressblog/portfolio/images/twittercard.png" />
+    <meta property="og:image" content="https://blogkao.net/wordpressblog/images/twittercard.png" />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
