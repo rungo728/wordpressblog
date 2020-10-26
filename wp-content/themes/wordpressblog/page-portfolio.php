@@ -4,6 +4,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" >
     <!-- twitterカード設定 -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@kao11designer" />
@@ -18,9 +20,6 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <!-- favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" >
-    <link rel="icon" href="/favicon.ico" >
     <!-- original -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/main-1.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/template.css" />
